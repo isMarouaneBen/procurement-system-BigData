@@ -65,7 +65,7 @@ The daily pipeline executes 8 sequential tasks:
 
 1. **Clone the repository**
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/isMarouaneBen/procurement-system-BigData.git
    cd procurement-system-BigData
    ```
 
@@ -122,8 +122,8 @@ procurement-system-BigData/
 ├── init-scripts/                # Database initialization
 │   ├── postgres/                # PostgreSQL schema & data
 │   ├── cassandra/               # Cassandra keyspace setup
-│   ├── hdfs/                    # HDFS directory structure
-│   └── airflow/                 # Airflow connections
+│   ├──── hdfs/                    # HDFS directory structure
+│  
 ├── docker-compose.yaml          # Complete stack orchestration
 ├── Dockerfile                   # Airflow container definition
 ├── requirements.txt             # Python dependencies
@@ -132,15 +132,6 @@ procurement-system-BigData/
 
 ## 🔧 Configuration
 
-### Environment Variables
-
-Key configurations in `docker-compose.yaml`:
-
-- **Database Credentials**: PostgreSQL admin/admin123
-- **Airflow Admin**: admin/admin123
-- **HDFS**: namenode:9000 (internal), 9870 (external)
-- **Cassandra**: 2-node cluster with replication factor 3
-- **Trino**: Port 8080 (internal), 8081 (external)
 
 ### Data Paths
 
@@ -245,17 +236,6 @@ WHERE s.snapshot_date = CURRENT_DATE;
 3. Make changes with proper testing
 4. Submit a pull request with detailed description
 
-## 📄 License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-## 🙋 Support
-
-For issues and questions:
-1. Check the Airflow logs: `docker-compose logs airflow-scheduler`
-2. Review HDFS data: Access via Namenode UI
-3. Query Trino directly for data validation
-4. Check container health: `docker-compose ps`
 
 ## 🏆 Acknowledgments
 
