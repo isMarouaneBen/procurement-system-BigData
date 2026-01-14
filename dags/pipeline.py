@@ -38,10 +38,12 @@ from io import StringIO
 
 DATE_FORMAT = "%d-%m-%Y"
 
-# Base paths (local - for temporary processing)
+# Base paths (local)
 BASE_DATA_PATH = "/opt/airflow/data"
 RAW_PATH = f"{BASE_DATA_PATH}/raw"
-TEMP_PATH = f"{BASE_DATA_PATH}/temp"
+PROCESSED_PATH = f"{BASE_DATA_PATH}/processed"
+OUTPUT_PATH = f"{BASE_DATA_PATH}/output"
+LOGS_PATH = f"{BASE_DATA_PATH}/logs"
 
 # HDFS paths
 HDFS_BASE_PATH = "/procurement"
@@ -86,14 +88,14 @@ def get_trino_connection():
 
 def log_task_execution(task_name: str, execution_date: str, status: str, 
                        details: Dict = None, context: Dict = None) -> str:
-    """Log task execution details to JSON file in HDFS"""
+    """Log task execution details to JSON file locally and in HDFS"""
     try:
-        # Create temp local file
-        temp_dir = f"{TEMP_PATH}/logs/tasks/{execution_date}"
-        os.makedirs(temp_dir, mode=0o777, exist_ok=True)
+        # Create local log directory
+        log_dir = f"{LOGS_PATH}/tasks/{execution_date}"
+        os.makedirs(log_dir, mode=0o777, exist_ok=True)
         
         timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-        temp_log_file = os.path.join(temp_dir, f"{task_name}_{timestamp}.json")
+        local_log_file = os.path.join(log_dir, f"{task_name}_{timestamp}.json")
         
         log_data = {
             "task_name": task_name,
@@ -103,16 +105,13 @@ def log_task_execution(task_name: str, execution_date: str, status: str,
             "details": details or {},
         }
         
-        with open(temp_log_file, 'w') as f:
+        with open(local_log_file, 'w') as f:
             json.dump(log_data, f, indent=2)
         
         # Upload to HDFS
         hdfs_hook = WebHDFSHook(webhdfs_conn_id=HDFS_CONN_ID)
         hdfs_log_path = f"{HDFS_LOGS_PATH}/tasks/{execution_date}/{task_name}_{timestamp}.json"
-        hdfs_hook.load_file(source=temp_log_file, destination=hdfs_log_path, overwrite=True)
-        
-        # Clean up temp file
-        os.remove(temp_log_file)
+        hdfs_hook.load_file(source=local_log_file, destination=hdfs_log_path, overwrite=True)
         
         return hdfs_log_path
     except Exception as log_err:
@@ -122,14 +121,14 @@ def log_task_execution(task_name: str, execution_date: str, status: str,
 
 def log_exception(exception: Exception, task_name: str, execution_date: str, 
                   additional_info: Dict = None) -> str:
-    """Log exception details to JSON file in HDFS and raise"""
+    """Log exception details to JSON file locally and in HDFS, then raise"""
     try:
-        # Create temp local file
-        temp_dir = f"{TEMP_PATH}/logs/exceptions/{execution_date}"
-        os.makedirs(temp_dir, mode=0o777, exist_ok=True)
+        # Create local exception directory
+        exception_dir = f"{LOGS_PATH}/exceptions/{execution_date}"
+        os.makedirs(exception_dir, mode=0o777, exist_ok=True)
         
         timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-        temp_exception_file = os.path.join(temp_dir, f"{task_name}_{timestamp}.json")
+        local_exception_file = os.path.join(exception_dir, f"{task_name}_{timestamp}.json")
         
         exception_data = {
             "task_name": task_name,
@@ -141,16 +140,13 @@ def log_exception(exception: Exception, task_name: str, execution_date: str,
             "additional_info": additional_info or {}
         }
         
-        with open(temp_exception_file, 'w') as f:
+        with open(local_exception_file, 'w') as f:
             json.dump(exception_data, f, indent=2)
         
         # Upload to HDFS
         hdfs_hook = WebHDFSHook(webhdfs_conn_id=HDFS_CONN_ID)
         hdfs_exception_path = f"{HDFS_LOGS_PATH}/exceptions/{execution_date}/{task_name}_{timestamp}.json"
-        hdfs_hook.load_file(source=temp_exception_file, destination=hdfs_exception_path, overwrite=True)
-        
-        # Clean up temp file
-        os.remove(temp_exception_file)
+        hdfs_hook.load_file(source=local_exception_file, destination=hdfs_exception_path, overwrite=True)
         
         logging.error(f"Exception logged to HDFS: {hdfs_exception_path}")
     except Exception as log_err:
@@ -693,17 +689,17 @@ def generate_supplier_orders_with_trino(**context):
         cursor.close()
         conn.close()
         
-        # Save to temporary local files
-        temp_dir = Path(f"{TEMP_PATH}/supplier_orders/{date_str}")
-        temp_dir.mkdir(parents=True, exist_ok=True)
+        # Save to local files
+        output_dir = Path(f"{OUTPUT_PATH}/supplier_orders/{date_str}")
+        output_dir.mkdir(parents=True, exist_ok=True)
         
-        temp_json = temp_dir / "supplier_orders.json"
-        with open(temp_json, 'w') as f:
+        output_json = output_dir / "supplier_orders.json"
+        with open(output_json, 'w') as f:
             json.dump(supplier_orders, f, indent=2, default=str)
         
-        temp_csv = temp_dir / "supplier_orders.csv"
+        output_csv = output_dir / "supplier_orders.csv"
         if supplier_orders:
-            with open(temp_csv, 'w', newline='') as f:
+            with open(output_csv, 'w', newline='') as f:
                 writer = csv.DictWriter(f, fieldnames=supplier_orders[0].keys())
                 writer.writeheader()
                 writer.writerows(supplier_orders)
@@ -713,8 +709,8 @@ def generate_supplier_orders_with_trino(**context):
         hdfs_json_path = f"{HDFS_OUTPUT_PATH}/supplier_orders/{date_str}/supplier_orders.json"
         hdfs_csv_path = f"{HDFS_OUTPUT_PATH}/supplier_orders/{date_str}/supplier_orders.csv"
         
-        hdfs_hook.load_file(source=str(temp_json), destination=hdfs_json_path, overwrite=True)
-        hdfs_hook.load_file(source=str(temp_csv), destination=hdfs_csv_path, overwrite=True)
+        hdfs_hook.load_file(source=str(output_json), destination=hdfs_json_path, overwrite=True)
+        hdfs_hook.load_file(source=str(output_csv), destination=hdfs_csv_path, overwrite=True)
         
         total_cost = sum(float(o['total_cost']) for o in supplier_orders)
         
@@ -777,18 +773,18 @@ def generate_pipeline_summary(**context):
             }
         }
         
-        # Save to temporary local file
-        temp_dir = Path(f"{TEMP_PATH}/pipeline_summary")
-        temp_dir.mkdir(parents=True, exist_ok=True)
+        # Save to local file
+        summary_dir = Path(f"{OUTPUT_PATH}/pipeline_summary")
+        summary_dir.mkdir(parents=True, exist_ok=True)
         
-        temp_summary = temp_dir / f"summary_{date_str}.json"
-        with open(temp_summary, 'w') as f:
+        summary_file = summary_dir / f"summary_{date_str}.json"
+        with open(summary_file, 'w') as f:
             json.dump(summary, f, indent=2)
         
         # Upload to HDFS
         hdfs_hook = WebHDFSHook(webhdfs_conn_id=HDFS_CONN_ID)
         hdfs_summary_path = f"{HDFS_LOGS_PATH}/summaries/summary_{date_str}.json"
-        hdfs_hook.load_file(source=str(temp_summary), destination=hdfs_summary_path, overwrite=True)
+        hdfs_hook.load_file(source=str(summary_file), destination=hdfs_summary_path, overwrite=True)
         
         logging.info("=" * 70)
         logging.info("PIPELINE SUMMARY")
@@ -805,9 +801,7 @@ def generate_pipeline_summary(**context):
         log_exception(e, "generate_pipeline_summary", date_str, {"stage": "summary_generation"})
 
 
-# =============================================================================
-# DAG DEFINITION - SEQUENTIAL EXECUTION
-# =============================================================================
+
 
 default_args = {
     'owner': 'procurement_team',
