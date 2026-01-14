@@ -1,0 +1,10 @@
+{
+  "task_name": "create_hive_tables",
+  "timestamp": "20260114_055550",
+  "execution_date": "14-01-2026",
+  "status": "success",
+  "details": {
+    "orders_count": 1000,
+    "stock_count": 172
+  }
+}

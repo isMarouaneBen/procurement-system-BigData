@@ -1,0 +1,349 @@
+services:
+  postgres:
+    image: postgres:13
+    container_name: procurement_postgres
+    environment:
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: admin123
+      POSTGRES_DB: postgres
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./init-scripts/postgres:/docker-entrypoint-initdb.d
+    networks:
+      - procurement_network
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U admin -d postgres"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # PgAdmin
+  pgadmin:
+    image: dpage/pgadmin4:latest
+    container_name: procurement_pgadmin
+    environment:
+      PGADMIN_DEFAULT_EMAIL: admin@procurement.com
+      PGADMIN_DEFAULT_PASSWORD: admin123
+    ports:
+      - "5050:80"
+    volumes:
+      - pgadmin_data:/var/lib/pgadmin
+    networks:
+      - procurement_network
+    depends_on:
+      - postgres
+
+  # HDFS NameNode
+  namenode:
+    image: bde2020/hadoop-namenode:2.0.0-hadoop3.2.1-java8
+    container_name: namenode
+    environment:
+      CLUSTER_NAME: procurement_cluster
+      CORE_CONF_fs_defaultFS: hdfs://namenode:9000
+      CORE_CONF_hadoop_http_staticuser_user: root
+      HDFS_CONF_dfs_namenode_datanode_registration_ip___hostname___check: "false"
+      HDFS_CONF_dfs_permissions_enabled: "false"
+      HDFS_CONF_dfs_webhdfs_enabled: "true"
+    ports:
+      - "9870:9870"
+      - "9000:9000"
+    volumes:
+      - namenode_data:/hadoop/dfs/name
+      - ./init-scripts:/init-scripts:ro
+    networks:
+      - procurement_network
+    command: bash -c "/init-scripts/hdfs/hdfs-init.sh"
+    healthcheck:
+      test: ["CMD-SHELL", "curl -f http://localhost:9870/ || exit 1"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  # HDFS Secondary NameNode
+  secondarynamenode:
+    image: bde2020/hadoop-namenode:2.0.0-hadoop3.2.1-java8
+    container_name: secondarynamenode
+    environment:
+      CLUSTER_NAME: procurement_cluster
+      CORE_CONF_fs_defaultFS: hdfs://namenode:9000
+    ports:
+      - "9868:9868"
+    volumes:
+      - secondary_namenode_data:/hadoop/dfs/namesecondary
+    networks:
+      - procurement_network
+    depends_on:
+      - namenode
+    command: hdfs secondarynamenode
+
+  # HDFS DataNode 1
+  datanode1:
+    image: bde2020/hadoop-datanode:2.0.0-hadoop3.2.1-java8
+    container_name: datanode1
+    environment:
+      CORE_CONF_fs_defaultFS: hdfs://namenode:9000
+      CORE_CONF_hadoop_http_staticuser_user: root
+      HDFS_CONF_dfs_permissions_enabled: "false"
+    ports:
+      - "9864:9864"
+    volumes:
+      - datanode1_data:/hadoop/dfs/data
+    networks:
+      - procurement_network
+    depends_on:
+      - namenode
+
+  # HDFS DataNode 2
+  datanode2:
+    image: bde2020/hadoop-datanode:2.0.0-hadoop3.2.1-java8
+    container_name: datanode2
+    environment:
+      CORE_CONF_fs_defaultFS: hdfs://namenode:9000
+      CORE_CONF_hadoop_http_staticuser_user: root
+      HDFS_CONF_dfs_permissions_enabled: "false"
+    ports:
+      - "9865:9864"
+    volumes:
+      - datanode2_data:/hadoop/dfs/data
+    networks:
+      - procurement_network
+    depends_on:
+      - namenode
+
+
+
+
+  # Cassandra Node 1
+  cassandra1:
+    image: cassandra:4.1
+    container_name: cassandra1
+    environment:
+      CASSANDRA_CLUSTER_NAME: procurement_cassandra_cluster
+      CASSANDRA_SEEDS: cassandra1
+      CASSANDRA_DC: dc1
+      CASSANDRA_RACK: rack1
+      CASSANDRA_ENDPOINT_SNITCH: GossipingPropertyFileSnitch
+      MAX_HEAP_SIZE: 512M
+      HEAP_NEWSIZE: 100M
+    ports:
+      - "9042:9042"
+      - "7199:7199"
+    volumes:
+      - cassandra1_data:/var/lib/cassandra
+    networks:
+      - procurement_network
+    healthcheck:
+      test: ["CMD-SHELL", "cqlsh -e 'describe cluster' || exit 1"]
+      interval: 30s
+      timeout: 10s
+      retries: 10
+
+  # Cassandra Node 2
+  cassandra2:
+    image: cassandra:4.1
+    container_name: cassandra2
+    environment:
+      CASSANDRA_CLUSTER_NAME: procurement_cassandra_cluster
+      CASSANDRA_SEEDS: cassandra1
+      CASSANDRA_DC: dc1
+      CASSANDRA_RACK: rack1
+      CASSANDRA_ENDPOINT_SNITCH: GossipingPropertyFileSnitch
+      MAX_HEAP_SIZE: 512M
+      HEAP_NEWSIZE: 100M
+    ports:
+      - "9043:9042"
+      - "7200:7199"
+    volumes:
+      - cassandra2_data:/var/lib/cassandra
+    networks:
+      - procurement_network
+    depends_on:
+      cassandra1:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD-SHELL", "cqlsh -e 'describe cluster' || exit 1"]
+      interval: 30s
+      timeout: 10s
+      retries: 10
+
+  # Cassandra Initialization
+  cassandra-init:
+    image: cassandra:4.1
+    container_name: cassandra-init
+    restart: "no"
+    depends_on:
+      cassandra1:
+        condition: service_healthy
+    volumes:
+      - ./init-scripts/cassandra:/init-scripts/cassandra:ro
+    networks:
+      - procurement_network
+    entrypoint: ["/bin/bash", "/init-scripts/cassandra/run-init.sh"]
+  
+
+  # Trino
+  trino:
+    image: trinodb/trino:435
+    container_name: trino_coordinator
+    ports:
+      - "8081:8080"
+    volumes:
+      - ./trino/etc:/etc/trino
+      - trino_data:/data/trino
+    networks:
+      - procurement_network
+    depends_on:
+      namenode:
+        condition: service_healthy
+      cassandra1:
+        condition: service_healthy
+      postgres:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD-SHELL", "curl -f http://localhost:8080/v1/info || exit 1"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+
+  # Airflow Redis
+  redis:
+    image: redis:7
+    container_name: airflow_redis
+    ports:
+      - "6379:6379"
+    networks:
+      - procurement_network
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # Airflow Initialization
+  airflow-init:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: airflow_init
+    environment:
+      AIRFLOW__CORE__EXECUTOR: LocalExecutor
+      AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://admin:admin123@postgres/airflow
+      AIRFLOW__CELERY__RESULT_BACKEND: db+postgresql://admin:admin123@postgres/airflow
+      AIRFLOW__CELERY__BROKER_URL: redis://redis:6379/0
+      AIRFLOW__CORE__FERNET_KEY: 'UKMzEm3yIuFYEq1y3-2FxZE1RcPLKq0CnL5fMEJ6sGQ='
+      AIRFLOW__CORE__LOAD_EXAMPLES: 'false'
+      _AIRFLOW_DB_MIGRATE: 'true'
+      _AIRFLOW_WWW_USER_CREATE: 'true'
+      _AIRFLOW_WWW_USER_USERNAME: admin
+      _AIRFLOW_WWW_USER_PASSWORD: admin123
+    networks:
+      - procurement_network
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    volumes:
+      - ./dags:/opt/airflow/dags
+      - ./logs:/opt/airflow/logs
+      - ./plugins:/opt/airflow/plugins
+    entrypoint: /bin/bash
+    command:
+      - -c
+      - |
+        airflow db migrate
+        airflow users create \
+          --username admin \
+          --password admin123 \
+          --firstname Admin \
+          --lastname User \
+          --role Admin \
+          --email admin@example.com || true
+        echo "Initialization complete"
+
+  # Airflow Webserver
+  airflow-webserver:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: airflow_webserver
+    environment:
+      AIRFLOW__CORE__EXECUTOR: LocalExecutor
+      AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://admin:admin123@postgres/airflow
+      AIRFLOW__CELERY__RESULT_BACKEND: db+postgresql://admin:admin123@postgres/airflow
+      AIRFLOW__CELERY__BROKER_URL: redis://redis:6379/0
+      AIRFLOW__CORE__FERNET_KEY: 'UKMzEm3yIuFYEq1y3-2FxZE1RcPLKq0CnL5fMEJ6sGQ='
+      AIRFLOW__CORE__DAGS_ARE_PAUSED_AT_CREATION: 'true'
+      AIRFLOW__CORE__LOAD_EXAMPLES: 'false'
+      AIRFLOW__API__AUTH_BACKENDS: 'airflow.api.auth.backend.basic_auth'
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./dags:/opt/airflow/dags
+      - ./logs:/opt/airflow/logs
+      - ./plugins:/opt/airflow/plugins
+      - airflow_data:/opt/airflow
+      - ./scripts:/opt/airflow/scripts
+      - ./data:/opt/airflow/data
+    networks:
+      - procurement_network
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+      airflow-init:
+        condition: service_completed_successfully
+    command: webserver
+    healthcheck:
+      test: ["CMD", "curl", "--fail", "http://localhost:8080/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+
+  # Airflow Scheduler
+  airflow-scheduler:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: airflow_scheduler
+    environment:
+      AIRFLOW__CORE__EXECUTOR: LocalExecutor
+      AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://admin:admin123@postgres/airflow
+      AIRFLOW__CELERY__RESULT_BACKEND: db+postgresql://admin:admin123@postgres/airflow
+      AIRFLOW__CELERY__BROKER_URL: redis://redis:6379/0
+      AIRFLOW__CORE__FERNET_KEY: 'UKMzEm3yIuFYEq1y3-2FxZE1RcPLKq0CnL5fMEJ6sGQ='
+      AIRFLOW__CORE__DAGS_ARE_PAUSED_AT_CREATION: 'true'
+      AIRFLOW__CORE__LOAD_EXAMPLES: 'false'
+    volumes:
+      - ./dags:/opt/airflow/dags
+      - ./logs:/opt/airflow/logs
+      - ./plugins:/opt/airflow/plugins
+      - airflow_data:/opt/airflow
+      - ./scripts:/opt/airflow/scripts
+      - ./data:/opt/airflow/data
+    networks:
+      - procurement_network
+    depends_on:
+      airflow-webserver:
+        condition: service_healthy
+    command: scheduler
+
+
+volumes:
+  postgres_data:
+  pgadmin_data:
+  namenode_data:
+  secondary_namenode_data:
+  datanode1_data:
+  datanode2_data:
+  cassandra1_data:
+  cassandra2_data:
+  trino_data:
+  airflow_data:
+
+networks:
+  procurement_network:
+    driver: bridge

@@ -1,0 +1,1864 @@
+[
+  {
+    "sku_code": "PROD001",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH001",
+    "available_qty": 10,
+    "reserved_qty": 1
+  },
+  {
+    "sku_code": "PROD001",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH002",
+    "available_qty": 40,
+    "reserved_qty": 10
+  },
+  {
+    "sku_code": "PROD001",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH003",
+    "available_qty": 30,
+    "reserved_qty": 9
+  },
+  {
+    "sku_code": "PROD001",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH005",
+    "available_qty": 75,
+    "reserved_qty": 0
+  },
+  {
+    "sku_code": "PROD001",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH006",
+    "available_qty": 75,
+    "reserved_qty": 0
+  },
+  {
+    "sku_code": "PROD001",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH007",
+    "available_qty": 30,
+    "reserved_qty": 0
+  },
+  {
+    "sku_code": "PROD001",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH009",
+    "available_qty": 150,
+    "reserved_qty": 0
+  },
+  {
+    "sku_code": "PROD001",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH010",
+    "available_qty": 60,
+    "reserved_qty": 12
+  },
+  {
+    "sku_code": "PROD002",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH001",
+    "available_qty": 120,
+    "reserved_qty": 12
+  },
+  {
+    "sku_code": "PROD002",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH002",
+    "available_qty": 100,
+    "reserved_qty": 20
+  },
+  {
+    "sku_code": "PROD002",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH003",
+    "available_qty": 150,
+    "reserved_qty": 45
+  },
+  {
+    "sku_code": "PROD002",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH004",
+    "available_qty": 20,
+    "reserved_qty": 2
+  },
+  {
+    "sku_code": "PROD002",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH006",
+    "available_qty": 60,
+    "reserved_qty": 0
+  },
+  {
+    "sku_code": "PROD002",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH007",
+    "available_qty": 80,
+    "reserved_qty": 4
+  },
+  {
+    "sku_code": "PROD002",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH009",
+    "available_qty": 200,
+    "reserved_qty": 0
+  },
+  {
+    "sku_code": "PROD002",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH010",
+    "available_qty": 100,
+    "reserved_qty": 30
+  },
+  {
+    "sku_code": "PROD003",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH001",
+    "available_qty": 100,
+    "reserved_qty": 0
+  },
+  {
+    "sku_code": "PROD003",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH002",
+    "available_qty": 50,
+    "reserved_qty": 0
+  },
+  {
+    "sku_code": "PROD003",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH003",
+    "available_qty": 5,
+    "reserved_qty": 0
+  },
+  {
+    "sku_code": "PROD003",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH004",
+    "available_qty": 5,
+    "reserved_qty": 0
+  },
+  {
+    "sku_code": "PROD003",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH007",
+    "available_qty": 25,
+    "reserved_qty": 2
+  },
+  {
+    "sku_code": "PROD003",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH008",
+    "available_qty": 62,
+    "reserved_qty": 15
+  },
+  {
+    "sku_code": "PROD004",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH003",
+    "available_qty": 20,
+    "reserved_qty": 0
+  },
+  {
+    "sku_code": "PROD004",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH005",
+    "available_qty": 50,
+    "reserved_qty": 0
+  },
+  {
+    "sku_code": "PROD004",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH006",
+    "available_qty": 20,
+    "reserved_qty": 5
+  },
+  {
+    "sku_code": "PROD004",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH007",
+    "available_qty": 100,
+    "reserved_qty": 0
+  },
+  {
+    "sku_code": "PROD004",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH008",
+    "available_qty": 150,
+    "reserved_qty": 0
+  },
+  {
+    "sku_code": "PROD004",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH009",
+    "available_qty": 100,
+    "reserved_qty": 15
+  },
+  {
+    "sku_code": "PROD005",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH001",
+    "available_qty": 8,
+    "reserved_qty": 2
+  },
+  {
+    "sku_code": "PROD005",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH004",
+    "available_qty": 20,
+    "reserved_qty": 2
+  },
+  {
+    "sku_code": "PROD005",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH005",
+    "available_qty": 50,
+    "reserved_qty": 0
+  },
+  {
+    "sku_code": "PROD005",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH007",
+    "available_qty": 80,
+    "reserved_qty": 12
+  },
+  {
+    "sku_code": "PROD005",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH008",
+    "available_qty": 50,
+    "reserved_qty": 10
+  },
+  {
+    "sku_code": "PROD005",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH010",
+    "available_qty": 50,
+    "reserved_qty": 10
+  },
+  {
+    "sku_code": "PROD006",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH002",
+    "available_qty": 10,
+    "reserved_qty": 0
+  },
+  {
+    "sku_code": "PROD006",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH004",
+    "available_qty": 10,
+    "reserved_qty": 1
+  },
+  {
+    "sku_code": "PROD006",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH005",
+    "available_qty": 10,
+    "reserved_qty": 1
+  },
+  {
+    "sku_code": "PROD006",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH006",
+    "available_qty": 5,
+    "reserved_qty": 0
+  },
+  {
+    "sku_code": "PROD006",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH008",
+    "available_qty": 5,
+    "reserved_qty": 1
+  },
+  {
+    "sku_code": "PROD006",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH009",
+    "available_qty": 5,
+    "reserved_qty": 1
+  },
+  {
+    "sku_code": "PROD006",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH010",
+    "available_qty": 7,
+    "reserved_qty": 1
+  },
+  {
+    "sku_code": "PROD007",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH001",
+    "available_qty": 6,
+    "reserved_qty": 0
+  },
+  {
+    "sku_code": "PROD007",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH002",
+    "available_qty": 15,
+    "reserved_qty": 4
+  },
+  {
+    "sku_code": "PROD007",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH004",
+    "available_qty": 12,
+    "reserved_qty": 0
+  },
+  {
+    "sku_code": "PROD007",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH005",
+    "available_qty": 40,
+    "reserved_qty": 2
+  },
+  {
+    "sku_code": "PROD007",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH006",
+    "available_qty": 40,
+    "reserved_qty": 0
+  },
+  {
+    "sku_code": "PROD007",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH007",
+    "available_qty": 30,
+    "reserved_qty": 0
+  },
+  {
+    "sku_code": "PROD007",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH009",
+    "available_qty": 4,
+    "reserved_qty": 0
+  },
+  {
+    "sku_code": "PROD008",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH001",
+    "available_qty": 1,
+    "reserved_qty": 0
+  },
+  {
+    "sku_code": "PROD008",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH002",
+    "available_qty": 9,
+    "reserved_qty": 1
+  },
+  {
+    "sku_code": "PROD008",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH003",
+    "available_qty": 3,
+    "reserved_qty": 0
+  },
+  {
+    "sku_code": "PROD008",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH004",
+    "available_qty": 3,
+    "reserved_qty": 0
+  },
+  {
+    "sku_code": "PROD008",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH005",
+    "available_qty": 1,
+    "reserved_qty": 0
+  },
+  {
+    "sku_code": "PROD008",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH006",
+    "available_qty": 3,
+    "reserved_qty": 0
+  },
+  {
+    "sku_code": "PROD009",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH001",
+    "available_qty": 4,
+    "reserved_qty": 0
+  },
+  {
+    "sku_code": "PROD009",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH003",
+    "available_qty": 0,
+    "reserved_qty": 0
+  },
+  {
+    "sku_code": "PROD009",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH005",
+    "available_qty": 1,
+    "reserved_qty": 0
+  },
+  {
+    "sku_code": "PROD009",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH007",
+    "available_qty": 0,
+    "reserved_qty": 0
+  },
+  {
+    "sku_code": "PROD009",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH008",
+    "available_qty": 2,
+    "reserved_qty": 0
+  },
+  {
+    "sku_code": "PROD009",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH010",
+    "available_qty": 3,
+    "reserved_qty": 0
+  },
+  {
+    "sku_code": "PROD010",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH003",
+    "available_qty": 300,
+    "reserved_qty": 90
+  },
+  {
+    "sku_code": "PROD010",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH005",
+    "available_qty": 0,
+    "reserved_qty": 0
+  },
+  {
+    "sku_code": "PROD010",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH006",
+    "available_qty": 0,
+    "reserved_qty": 0
+  },
+  {
+    "sku_code": "PROD010",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH007",
+    "available_qty": 80,
+    "reserved_qty": 12
+  },
+  {
+    "sku_code": "PROD010",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH010",
+    "available_qty": 400,
+    "reserved_qty": 40
+  },
+  {
+    "sku_code": "PROD011",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH001",
+    "available_qty": 200,
+    "reserved_qty": 30
+  },
+  {
+    "sku_code": "PROD011",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH003",
+    "available_qty": 120,
+    "reserved_qty": 6
+  },
+  {
+    "sku_code": "PROD011",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH005",
+    "available_qty": 120,
+    "reserved_qty": 30
+  },
+  {
+    "sku_code": "PROD011",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH006",
+    "available_qty": 300,
+    "reserved_qty": 30
+  },
+  {
+    "sku_code": "PROD011",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH007",
+    "available_qty": 400,
+    "reserved_qty": 60
+  },
+  {
+    "sku_code": "PROD011",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH008",
+    "available_qty": 600,
+    "reserved_qty": 60
+  },
+  {
+    "sku_code": "PROD011",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH010",
+    "available_qty": 0,
+    "reserved_qty": 0
+  },
+  {
+    "sku_code": "PROD012",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH001",
+    "available_qty": 225,
+    "reserved_qty": 0
+  },
+  {
+    "sku_code": "PROD012",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH004",
+    "available_qty": 150,
+    "reserved_qty": 45
+  },
+  {
+    "sku_code": "PROD012",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH005",
+    "available_qty": 0,
+    "reserved_qty": 0
+  },
+  {
+    "sku_code": "PROD012",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH006",
+    "available_qty": 180,
+    "reserved_qty": 36
+  },
+  {
+    "sku_code": "PROD012",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH007",
+    "available_qty": 60,
+    "reserved_qty": 12
+  },
+  {
+    "sku_code": "PROD012",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH008",
+    "available_qty": 600,
+    "reserved_qty": 0
+  },
+  {
+    "sku_code": "PROD012",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH010",
+    "available_qty": 30,
+    "reserved_qty": 3
+  },
+  {
+    "sku_code": "PROD013",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH001",
+    "available_qty": 1,
+    "reserved_qty": 0
+  },
+  {
+    "sku_code": "PROD013",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH006",
+    "available_qty": 0,
+    "reserved_qty": 0
+  },
+  {
+    "sku_code": "PROD013",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH007",
+    "available_qty": 1,
+    "reserved_qty": 0
+  },
+  {
+    "sku_code": "PROD013",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH008",
+    "available_qty": 1,
+    "reserved_qty": 0
+  },
+  {
+    "sku_code": "PROD013",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH009",
+    "available_qty": 1,
+    "reserved_qty": 0
+  },
+  {
+    "sku_code": "PROD013",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH010",
+    "available_qty": 3,
+    "reserved_qty": 0
+  },
+  {
+    "sku_code": "PROD014",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH002",
+    "available_qty": 250,
+    "reserved_qty": 50
+  },
+  {
+    "sku_code": "PROD014",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH005",
+    "available_qty": 100,
+    "reserved_qty": 30
+  },
+  {
+    "sku_code": "PROD014",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH006",
+    "available_qty": 150,
+    "reserved_qty": 0
+  },
+  {
+    "sku_code": "PROD014",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH007",
+    "available_qty": 250,
+    "reserved_qty": 0
+  },
+  {
+    "sku_code": "PROD014",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH008",
+    "available_qty": 120,
+    "reserved_qty": 12
+  },
+  {
+    "sku_code": "PROD014",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH009",
+    "available_qty": 80,
+    "reserved_qty": 0
+  },
+  {
+    "sku_code": "PROD014",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH010",
+    "available_qty": 150,
+    "reserved_qty": 0
+  },
+  {
+    "sku_code": "PROD015",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH001",
+    "available_qty": 500,
+    "reserved_qty": 125
+  },
+  {
+    "sku_code": "PROD015",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH002",
+    "available_qty": 120,
+    "reserved_qty": 30
+  },
+  {
+    "sku_code": "PROD015",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH003",
+    "available_qty": 80,
+    "reserved_qty": 0
+  },
+  {
+    "sku_code": "PROD015",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH004",
+    "available_qty": 400,
+    "reserved_qty": 20
+  },
+  {
+    "sku_code": "PROD015",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH006",
+    "available_qty": 120,
+    "reserved_qty": 6
+  },
+  {
+    "sku_code": "PROD015",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH007",
+    "available_qty": 200,
+    "reserved_qty": 50
+  },
+  {
+    "sku_code": "PROD015",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH008",
+    "available_qty": 40,
+    "reserved_qty": 0
+  },
+  {
+    "sku_code": "PROD015",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH009",
+    "available_qty": 160,
+    "reserved_qty": 32
+  },
+  {
+    "sku_code": "PROD015",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH010",
+    "available_qty": 300,
+    "reserved_qty": 0
+  },
+  {
+    "sku_code": "PROD016",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH001",
+    "available_qty": 40,
+    "reserved_qty": 12
+  },
+  {
+    "sku_code": "PROD016",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH002",
+    "available_qty": 15,
+    "reserved_qty": 4
+  },
+  {
+    "sku_code": "PROD016",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH003",
+    "available_qty": 15,
+    "reserved_qty": 0
+  },
+  {
+    "sku_code": "PROD016",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH004",
+    "available_qty": 4,
+    "reserved_qty": 1
+  },
+  {
+    "sku_code": "PROD016",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH005",
+    "available_qty": 2,
+    "reserved_qty": 0
+  },
+  {
+    "sku_code": "PROD016",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH009",
+    "available_qty": 10,
+    "reserved_qty": 2
+  },
+  {
+    "sku_code": "PROD016",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH010",
+    "available_qty": 4,
+    "reserved_qty": 0
+  },
+  {
+    "sku_code": "PROD017",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH003",
+    "available_qty": 50,
+    "reserved_qty": 10
+  },
+  {
+    "sku_code": "PROD017",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH004",
+    "available_qty": 150,
+    "reserved_qty": 22
+  },
+  {
+    "sku_code": "PROD017",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH009",
+    "available_qty": 100,
+    "reserved_qty": 30
+  },
+  {
+    "sku_code": "PROD017",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH010",
+    "available_qty": 75,
+    "reserved_qty": 18
+  },
+  {
+    "sku_code": "PROD018",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH001",
+    "available_qty": 0,
+    "reserved_qty": 0
+  },
+  {
+    "sku_code": "PROD018",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH003",
+    "available_qty": 9,
+    "reserved_qty": 0
+  },
+  {
+    "sku_code": "PROD018",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH004",
+    "available_qty": 30,
+    "reserved_qty": 6
+  },
+  {
+    "sku_code": "PROD018",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH005",
+    "available_qty": 60,
+    "reserved_qty": 3
+  },
+  {
+    "sku_code": "PROD018",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH008",
+    "available_qty": 22,
+    "reserved_qty": 6
+  },
+  {
+    "sku_code": "PROD018",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH009",
+    "available_qty": 0,
+    "reserved_qty": 0
+  },
+  {
+    "sku_code": "PROD018",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH010",
+    "available_qty": 30,
+    "reserved_qty": 3
+  },
+  {
+    "sku_code": "PROD019",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH002",
+    "available_qty": 0,
+    "reserved_qty": 0
+  },
+  {
+    "sku_code": "PROD019",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH004",
+    "available_qty": 1,
+    "reserved_qty": 0
+  },
+  {
+    "sku_code": "PROD019",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH005",
+    "available_qty": 5,
+    "reserved_qty": 0
+  },
+  {
+    "sku_code": "PROD019",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH006",
+    "available_qty": 6,
+    "reserved_qty": 0
+  },
+  {
+    "sku_code": "PROD019",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH007",
+    "available_qty": 0,
+    "reserved_qty": 0
+  },
+  {
+    "sku_code": "PROD019",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH009",
+    "available_qty": 2,
+    "reserved_qty": 0
+  },
+  {
+    "sku_code": "PROD019",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH010",
+    "available_qty": 1,
+    "reserved_qty": 0
+  },
+  {
+    "sku_code": "PROD020",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH001",
+    "available_qty": 3,
+    "reserved_qty": 0
+  },
+  {
+    "sku_code": "PROD020",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH003",
+    "available_qty": 2,
+    "reserved_qty": 0
+  },
+  {
+    "sku_code": "PROD020",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH004",
+    "available_qty": 2,
+    "reserved_qty": 0
+  },
+  {
+    "sku_code": "PROD020",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH005",
+    "available_qty": 3,
+    "reserved_qty": 0
+  },
+  {
+    "sku_code": "PROD020",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH006",
+    "available_qty": 2,
+    "reserved_qty": 0
+  },
+  {
+    "sku_code": "PROD020",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH007",
+    "available_qty": 4,
+    "reserved_qty": 0
+  },
+  {
+    "sku_code": "PROD020",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH008",
+    "available_qty": 1,
+    "reserved_qty": 0
+  },
+  {
+    "sku_code": "PROD020",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH009",
+    "available_qty": 2,
+    "reserved_qty": 0
+  },
+  {
+    "sku_code": "PROD021",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH001",
+    "available_qty": 0,
+    "reserved_qty": 0
+  },
+  {
+    "sku_code": "PROD021",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH002",
+    "available_qty": 0,
+    "reserved_qty": 0
+  },
+  {
+    "sku_code": "PROD021",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH003",
+    "available_qty": 1,
+    "reserved_qty": 0
+  },
+  {
+    "sku_code": "PROD021",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH004",
+    "available_qty": 0,
+    "reserved_qty": 0
+  },
+  {
+    "sku_code": "PROD021",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH005",
+    "available_qty": 4,
+    "reserved_qty": 0
+  },
+  {
+    "sku_code": "PROD021",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH006",
+    "available_qty": 0,
+    "reserved_qty": 0
+  },
+  {
+    "sku_code": "PROD021",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH008",
+    "available_qty": 0,
+    "reserved_qty": 0
+  },
+  {
+    "sku_code": "PROD021",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH009",
+    "available_qty": 1,
+    "reserved_qty": 0
+  },
+  {
+    "sku_code": "PROD022",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH001",
+    "available_qty": 0,
+    "reserved_qty": 0
+  },
+  {
+    "sku_code": "PROD022",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH002",
+    "available_qty": 10,
+    "reserved_qty": 3
+  },
+  {
+    "sku_code": "PROD022",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH004",
+    "available_qty": 30,
+    "reserved_qty": 3
+  },
+  {
+    "sku_code": "PROD022",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH007",
+    "available_qty": 75,
+    "reserved_qty": 15
+  },
+  {
+    "sku_code": "PROD022",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH008",
+    "available_qty": 50,
+    "reserved_qty": 15
+  },
+  {
+    "sku_code": "PROD023",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH001",
+    "available_qty": 4,
+    "reserved_qty": 0
+  },
+  {
+    "sku_code": "PROD023",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH002",
+    "available_qty": 10,
+    "reserved_qty": 0
+  },
+  {
+    "sku_code": "PROD023",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH004",
+    "available_qty": 0,
+    "reserved_qty": 0
+  },
+  {
+    "sku_code": "PROD023",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH005",
+    "available_qty": 0,
+    "reserved_qty": 0
+  },
+  {
+    "sku_code": "PROD023",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH006",
+    "available_qty": 0,
+    "reserved_qty": 0
+  },
+  {
+    "sku_code": "PROD023",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH007",
+    "available_qty": 12,
+    "reserved_qty": 0
+  },
+  {
+    "sku_code": "PROD023",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH008",
+    "available_qty": 6,
+    "reserved_qty": 1
+  },
+  {
+    "sku_code": "PROD023",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH010",
+    "available_qty": 1,
+    "reserved_qty": 0
+  },
+  {
+    "sku_code": "PROD024",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH001",
+    "available_qty": 4,
+    "reserved_qty": 0
+  },
+  {
+    "sku_code": "PROD024",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH005",
+    "available_qty": 5,
+    "reserved_qty": 1
+  },
+  {
+    "sku_code": "PROD024",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH006",
+    "available_qty": 0,
+    "reserved_qty": 0
+  },
+  {
+    "sku_code": "PROD024",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH008",
+    "available_qty": 0,
+    "reserved_qty": 0
+  },
+  {
+    "sku_code": "PROD024",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH010",
+    "available_qty": 6,
+    "reserved_qty": 1
+  },
+  {
+    "sku_code": "PROD025",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH001",
+    "available_qty": 600,
+    "reserved_qty": 60
+  },
+  {
+    "sku_code": "PROD025",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH002",
+    "available_qty": 160,
+    "reserved_qty": 40
+  },
+  {
+    "sku_code": "PROD025",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH003",
+    "available_qty": 200,
+    "reserved_qty": 10
+  },
+  {
+    "sku_code": "PROD025",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH005",
+    "available_qty": 0,
+    "reserved_qty": 0
+  },
+  {
+    "sku_code": "PROD025",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH006",
+    "available_qty": 400,
+    "reserved_qty": 40
+  },
+  {
+    "sku_code": "PROD025",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH007",
+    "available_qty": 120,
+    "reserved_qty": 12
+  },
+  {
+    "sku_code": "PROD026",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH001",
+    "available_qty": 0,
+    "reserved_qty": 0
+  },
+  {
+    "sku_code": "PROD026",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH004",
+    "available_qty": 1,
+    "reserved_qty": 0
+  },
+  {
+    "sku_code": "PROD026",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH005",
+    "available_qty": 9,
+    "reserved_qty": 0
+  },
+  {
+    "sku_code": "PROD026",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH006",
+    "available_qty": 1,
+    "reserved_qty": 0
+  },
+  {
+    "sku_code": "PROD026",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH007",
+    "available_qty": 4,
+    "reserved_qty": 1
+  },
+  {
+    "sku_code": "PROD026",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH009",
+    "available_qty": 0,
+    "reserved_qty": 0
+  },
+  {
+    "sku_code": "PROD026",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH010",
+    "available_qty": 4,
+    "reserved_qty": 0
+  },
+  {
+    "sku_code": "PROD027",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH001",
+    "available_qty": 1,
+    "reserved_qty": 0
+  },
+  {
+    "sku_code": "PROD027",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH002",
+    "available_qty": 8,
+    "reserved_qty": 0
+  },
+  {
+    "sku_code": "PROD027",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH004",
+    "available_qty": 2,
+    "reserved_qty": 0
+  },
+  {
+    "sku_code": "PROD027",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH005",
+    "available_qty": 3,
+    "reserved_qty": 0
+  },
+  {
+    "sku_code": "PROD027",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH006",
+    "available_qty": 3,
+    "reserved_qty": 0
+  },
+  {
+    "sku_code": "PROD027",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH007",
+    "available_qty": 5,
+    "reserved_qty": 0
+  },
+  {
+    "sku_code": "PROD027",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH008",
+    "available_qty": 4,
+    "reserved_qty": 0
+  },
+  {
+    "sku_code": "PROD027",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH009",
+    "available_qty": 1,
+    "reserved_qty": 0
+  },
+  {
+    "sku_code": "PROD027",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH010",
+    "available_qty": 1,
+    "reserved_qty": 0
+  },
+  {
+    "sku_code": "PROD028",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH002",
+    "available_qty": 6,
+    "reserved_qty": 1
+  },
+  {
+    "sku_code": "PROD028",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH004",
+    "available_qty": 15,
+    "reserved_qty": 3
+  },
+  {
+    "sku_code": "PROD028",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH006",
+    "available_qty": 2,
+    "reserved_qty": 0
+  },
+  {
+    "sku_code": "PROD028",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH007",
+    "available_qty": 12,
+    "reserved_qty": 2
+  },
+  {
+    "sku_code": "PROD028",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH008",
+    "available_qty": 6,
+    "reserved_qty": 1
+  },
+  {
+    "sku_code": "PROD028",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH009",
+    "available_qty": 4,
+    "reserved_qty": 0
+  },
+  {
+    "sku_code": "PROD029",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH002",
+    "available_qty": 50,
+    "reserved_qty": 2
+  },
+  {
+    "sku_code": "PROD029",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH003",
+    "available_qty": 125,
+    "reserved_qty": 0
+  },
+  {
+    "sku_code": "PROD029",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH009",
+    "available_qty": 50,
+    "reserved_qty": 0
+  },
+  {
+    "sku_code": "PROD029",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH010",
+    "available_qty": 30,
+    "reserved_qty": 0
+  },
+  {
+    "sku_code": "PROD030",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH001",
+    "available_qty": 36,
+    "reserved_qty": 9
+  },
+  {
+    "sku_code": "PROD030",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH004",
+    "available_qty": 12,
+    "reserved_qty": 3
+  },
+  {
+    "sku_code": "PROD030",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH005",
+    "available_qty": 36,
+    "reserved_qty": 0
+  },
+  {
+    "sku_code": "PROD030",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH006",
+    "available_qty": 30,
+    "reserved_qty": 3
+  },
+  {
+    "sku_code": "PROD030",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH007",
+    "available_qty": 0,
+    "reserved_qty": 0
+  },
+  {
+    "sku_code": "PROD030",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH008",
+    "available_qty": 45,
+    "reserved_qty": 0
+  },
+  {
+    "sku_code": "PROD030",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH010",
+    "available_qty": 90,
+    "reserved_qty": 0
+  },
+  {
+    "sku_code": "PROD031",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH001",
+    "available_qty": 250,
+    "reserved_qty": 37
+  },
+  {
+    "sku_code": "PROD031",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH003",
+    "available_qty": 80,
+    "reserved_qty": 20
+  },
+  {
+    "sku_code": "PROD031",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH007",
+    "available_qty": 20,
+    "reserved_qty": 5
+  },
+  {
+    "sku_code": "PROD031",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH008",
+    "available_qty": 80,
+    "reserved_qty": 8
+  },
+  {
+    "sku_code": "PROD032",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH001",
+    "available_qty": 100,
+    "reserved_qty": 30
+  },
+  {
+    "sku_code": "PROD032",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH002",
+    "available_qty": 60,
+    "reserved_qty": 0
+  },
+  {
+    "sku_code": "PROD032",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH003",
+    "available_qty": 0,
+    "reserved_qty": 0
+  },
+  {
+    "sku_code": "PROD032",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH005",
+    "available_qty": 0,
+    "reserved_qty": 0
+  },
+  {
+    "sku_code": "PROD032",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH006",
+    "available_qty": 120,
+    "reserved_qty": 12
+  },
+  {
+    "sku_code": "PROD032",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH007",
+    "available_qty": 80,
+    "reserved_qty": 24
+  },
+  {
+    "sku_code": "PROD032",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH009",
+    "available_qty": 250,
+    "reserved_qty": 25
+  },
+  {
+    "sku_code": "PROD033",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH001",
+    "available_qty": 250,
+    "reserved_qty": 62
+  },
+  {
+    "sku_code": "PROD033",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH002",
+    "available_qty": 0,
+    "reserved_qty": 0
+  },
+  {
+    "sku_code": "PROD033",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH003",
+    "available_qty": 500,
+    "reserved_qty": 50
+  },
+  {
+    "sku_code": "PROD033",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH004",
+    "available_qty": 750,
+    "reserved_qty": 37
+  },
+  {
+    "sku_code": "PROD033",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH005",
+    "available_qty": 375,
+    "reserved_qty": 0
+  },
+  {
+    "sku_code": "PROD033",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH009",
+    "available_qty": 300,
+    "reserved_qty": 30
+  },
+  {
+    "sku_code": "PROD033",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH010",
+    "available_qty": 50,
+    "reserved_qty": 0
+  },
+  {
+    "sku_code": "PROD034",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH002",
+    "available_qty": 40,
+    "reserved_qty": 0
+  },
+  {
+    "sku_code": "PROD034",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH003",
+    "available_qty": 2,
+    "reserved_qty": 0
+  },
+  {
+    "sku_code": "PROD034",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH007",
+    "available_qty": 8,
+    "reserved_qty": 0
+  },
+  {
+    "sku_code": "PROD034",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH008",
+    "available_qty": 40,
+    "reserved_qty": 12
+  },
+  {
+    "sku_code": "PROD034",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH010",
+    "available_qty": 20,
+    "reserved_qty": 6
+  },
+  {
+    "sku_code": "PROD035",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH001",
+    "available_qty": 0,
+    "reserved_qty": 0
+  },
+  {
+    "sku_code": "PROD035",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH002",
+    "available_qty": 1,
+    "reserved_qty": 0
+  },
+  {
+    "sku_code": "PROD035",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH003",
+    "available_qty": 0,
+    "reserved_qty": 0
+  },
+  {
+    "sku_code": "PROD035",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH004",
+    "available_qty": 0,
+    "reserved_qty": 0
+  },
+  {
+    "sku_code": "PROD035",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH005",
+    "available_qty": 4,
+    "reserved_qty": 0
+  },
+  {
+    "sku_code": "PROD035",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH007",
+    "available_qty": 1,
+    "reserved_qty": 0
+  },
+  {
+    "sku_code": "PROD035",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH008",
+    "available_qty": 1,
+    "reserved_qty": 0
+  },
+  {
+    "sku_code": "PROD035",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH009",
+    "available_qty": 0,
+    "reserved_qty": 0
+  },
+  {
+    "sku_code": "PROD036",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH001",
+    "available_qty": 0,
+    "reserved_qty": 0
+  },
+  {
+    "sku_code": "PROD036",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH002",
+    "available_qty": 0,
+    "reserved_qty": 0
+  },
+  {
+    "sku_code": "PROD036",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH003",
+    "available_qty": 0,
+    "reserved_qty": 0
+  },
+  {
+    "sku_code": "PROD036",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH004",
+    "available_qty": 3,
+    "reserved_qty": 0
+  },
+  {
+    "sku_code": "PROD036",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH006",
+    "available_qty": 1,
+    "reserved_qty": 0
+  },
+  {
+    "sku_code": "PROD036",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH007",
+    "available_qty": 3,
+    "reserved_qty": 0
+  },
+  {
+    "sku_code": "PROD036",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH008",
+    "available_qty": 4,
+    "reserved_qty": 0
+  },
+  {
+    "sku_code": "PROD037",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH002",
+    "available_qty": 60,
+    "reserved_qty": 0
+  },
+  {
+    "sku_code": "PROD037",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH003",
+    "available_qty": 100,
+    "reserved_qty": 10
+  },
+  {
+    "sku_code": "PROD037",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH004",
+    "available_qty": 30,
+    "reserved_qty": 0
+  },
+  {
+    "sku_code": "PROD037",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH005",
+    "available_qty": 0,
+    "reserved_qty": 0
+  },
+  {
+    "sku_code": "PROD037",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH008",
+    "available_qty": 0,
+    "reserved_qty": 0
+  },
+  {
+    "sku_code": "PROD037",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH010",
+    "available_qty": 0,
+    "reserved_qty": 0
+  },
+  {
+    "sku_code": "PROD038",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH002",
+    "available_qty": 1,
+    "reserved_qty": 0
+  },
+  {
+    "sku_code": "PROD038",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH003",
+    "available_qty": 3,
+    "reserved_qty": 0
+  },
+  {
+    "sku_code": "PROD038",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH004",
+    "available_qty": 20,
+    "reserved_qty": 0
+  },
+  {
+    "sku_code": "PROD038",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH005",
+    "available_qty": 20,
+    "reserved_qty": 0
+  },
+  {
+    "sku_code": "PROD038",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH006",
+    "available_qty": 1,
+    "reserved_qty": 0
+  },
+  {
+    "sku_code": "PROD038",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH007",
+    "available_qty": 0,
+    "reserved_qty": 0
+  },
+  {
+    "sku_code": "PROD038",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH008",
+    "available_qty": 7,
+    "reserved_qty": 1
+  },
+  {
+    "sku_code": "PROD038",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH009",
+    "available_qty": 12,
+    "reserved_qty": 0
+  },
+  {
+    "sku_code": "PROD039",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH001",
+    "available_qty": 9,
+    "reserved_qty": 0
+  },
+  {
+    "sku_code": "PROD039",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH002",
+    "available_qty": 0,
+    "reserved_qty": 0
+  },
+  {
+    "sku_code": "PROD039",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH004",
+    "available_qty": 3,
+    "reserved_qty": 0
+  },
+  {
+    "sku_code": "PROD039",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH005",
+    "available_qty": 12,
+    "reserved_qty": 3
+  },
+  {
+    "sku_code": "PROD039",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH007",
+    "available_qty": 7,
+    "reserved_qty": 0
+  },
+  {
+    "sku_code": "PROD039",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH008",
+    "available_qty": 3,
+    "reserved_qty": 0
+  },
+  {
+    "sku_code": "PROD039",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH009",
+    "available_qty": 3,
+    "reserved_qty": 0
+  },
+  {
+    "sku_code": "PROD039",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH010",
+    "available_qty": 6,
+    "reserved_qty": 0
+  },
+  {
+    "sku_code": "PROD040",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH001",
+    "available_qty": 60,
+    "reserved_qty": 3
+  },
+  {
+    "sku_code": "PROD040",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH003",
+    "available_qty": 60,
+    "reserved_qty": 12
+  },
+  {
+    "sku_code": "PROD040",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH004",
+    "available_qty": 400,
+    "reserved_qty": 0
+  },
+  {
+    "sku_code": "PROD040",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH006",
+    "available_qty": 60,
+    "reserved_qty": 15
+  },
+  {
+    "sku_code": "PROD040",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH007",
+    "available_qty": 400,
+    "reserved_qty": 40
+  },
+  {
+    "sku_code": "PROD040",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH009",
+    "available_qty": 400,
+    "reserved_qty": 0
+  },
+  {
+    "sku_code": "PROD040",
+    "snapshot_date": "2026-01-13",
+    "warehouse_code": "WH010",
+    "available_qty": 250,
+    "reserved_qty": 0
+  }
+]

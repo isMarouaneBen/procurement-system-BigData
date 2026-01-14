@@ -1,0 +1,11 @@
+{
+  "task_name": "load_orders_to_hdfs",
+  "timestamp": "20260114_052357",
+  "execution_date": "14-01-2026",
+  "error_type": "AirflowNotFoundException",
+  "error_message": "The conn_id `hdfs_default` isn't defined",
+  "traceback": "Traceback (most recent call last):\n  File \"/opt/airflow/dags/pipeline.py\", line 168, in load_orders_to_hdfs\n    hdfs_hook.load_file(source=orders_file, destination=hdfs_orders_path, overwrite=True)\n  File \"/home/airflow/.local/lib/python3.11/site-packages/airflow/providers/apache/hdfs/hooks/webhdfs.py\", line 157, in load_file\n    conn = self.get_conn()\n           ^^^^^^^^^^^^^^^\n  File \"/home/airflow/.local/lib/python3.11/site-packages/airflow/providers/apache/hdfs/hooks/webhdfs.py\", line 72, in get_conn\n    connection = self._find_valid_server()\n                 ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/airflow/.local/lib/python3.11/site-packages/airflow/providers/apache/hdfs/hooks/webhdfs.py\", line 78, in _find_valid_server\n    connection = self.get_connection(self.webhdfs_conn_id)\n                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/airflow/.local/lib/python3.11/site-packages/airflow/hooks/base.py\", line 82, in get_connection\n    conn = Connection.get_connection_from_secrets(conn_id)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/airflow/.local/lib/python3.11/site-packages/airflow/models/connection.py\", line 479, in get_connection_from_secrets\n    raise AirflowNotFoundException(f\"The conn_id `{conn_id}` isn't defined\")\nairflow.exceptions.AirflowNotFoundException: The conn_id `hdfs_default` isn't defined\n",
+  "additional_info": {
+    "stage": "hdfs_orders_upload"
+  }
+}

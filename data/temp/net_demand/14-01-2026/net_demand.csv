@@ -1,0 +1,349 @@
+sku_id,sku_code,product_name,category,warehouse_id,warehouse_code,warehouse_name,city,aggregated_orders,safety_stock,available_stock,reserved_stock,effective_stock,net_demand,calculation_date
+15,PROD015,Safety Gloves (Nitrile),Safety Equipment,3,WH003,Fès Logistics Hub,Fès,2000,200,0,0,0,2200,14-01-2026
+15,PROD015,Safety Gloves (Nitrile),Safety Equipment,2,WH002,Rabat Distribution Center,Rabat,1900,250,0,0,0,2150,14-01-2026
+15,PROD015,Safety Gloves (Nitrile),Safety Equipment,1,WH001,Casablanca Main Hub,Casablanca,1300,200,0,0,0,1500,14-01-2026
+15,PROD015,Safety Gloves (Nitrile),Safety Equipment,5,WH005,Agadir Port Terminal,Agadir,1100,200,0,0,0,1300,14-01-2026
+15,PROD015,Safety Gloves (Nitrile),Safety Equipment,9,WH009,Safi Industrial Park,Safi,600,200,0,0,0,800,14-01-2026
+15,PROD015,Safety Gloves (Nitrile),Safety Equipment,4,WH004,Marrakech Distribution,Marrakech,550,200,0,0,0,750,14-01-2026
+15,PROD015,Safety Gloves (Nitrile),Safety Equipment,6,WH006,Tangier Free Zone,Tangier,500,200,0,0,0,700,14-01-2026
+14,PROD014,Safety Helmet Yellow,Safety Equipment,3,WH003,Fès Logistics Hub,Fès,590,100,0,0,0,690,14-01-2026
+2,PROD002,Ballpoint Pens (box of 50),Office Supplies,6,WH006,Tangier Free Zone,Tangier,540,100,0,0,0,640,14-01-2026
+14,PROD014,Safety Helmet Yellow,Safety Equipment,8,WH008,Oujda Border Warehouse,Oujda,500,100,0,0,0,600,14-01-2026
+15,PROD015,Safety Gloves (Nitrile),Safety Equipment,10,WH010,El Jadida Storage Facility,El Jadida,400,200,0,0,0,600,14-01-2026
+14,PROD014,Safety Helmet Yellow,Safety Equipment,4,WH004,Marrakech Distribution,Marrakech,490,100,0,0,0,590,14-01-2026
+2,PROD002,Ballpoint Pens (box of 50),Office Supplies,1,WH001,Casablanca Main Hub,Casablanca,440,150,0,0,0,590,14-01-2026
+15,PROD015,Safety Gloves (Nitrile),Safety Equipment,7,WH007,Meknes Distribution Point,Meknes,350,200,0,0,0,550,14-01-2026
+14,PROD014,Safety Helmet Yellow,Safety Equipment,9,WH009,Safi Industrial Park,Safi,430,100,0,0,0,530,14-01-2026
+14,PROD014,Safety Helmet Yellow,Safety Equipment,5,WH005,Agadir Port Terminal,Agadir,400,120,0,0,0,520,14-01-2026
+25,PROD025,Toilet Paper (bulk roll),Cleaning Supplies,10,WH010,El Jadida Storage Facility,El Jadida,320,200,0,0,0,520,14-01-2026
+2,PROD002,Ballpoint Pens (box of 50),Office Supplies,3,WH003,Fès Logistics Hub,Fès,360,120,0,0,0,480,14-01-2026
+14,PROD014,Safety Helmet Yellow,Safety Equipment,6,WH006,Tangier Free Zone,Tangier,350,100,0,0,0,450,14-01-2026
+14,PROD014,Safety Helmet Yellow,Safety Equipment,10,WH010,El Jadida Storage Facility,El Jadida,320,100,0,0,0,420,14-01-2026
+11,PROD011,Packing Tape (50mm),Packaging,7,WH007,Meknes Distribution Point,Meknes,216,200,0,0,0,416,14-01-2026
+12,PROD012,Bubble Wrap 500mm,Packaging,3,WH003,Fès Logistics Hub,Fès,210,200,0,0,0,410,14-01-2026
+2,PROD002,Ballpoint Pens (box of 50),Office Supplies,7,WH007,Meknes Distribution Point,Meknes,310,100,0,0,0,410,14-01-2026
+11,PROD011,Packing Tape (50mm),Packaging,2,WH002,Rabat Distribution Center,Rabat,96,300,0,0,0,396,14-01-2026
+12,PROD012,Bubble Wrap 500mm,Packaging,9,WH009,Safi Industrial Park,Safi,190,180,0,0,0,370,14-01-2026
+33,PROD033,Welding Electrode Mild Steel,Maintenance,9,WH009,Safi Industrial Park,Safi,120,250,0,0,0,370,14-01-2026
+33,PROD033,Welding Electrode Mild Steel,Maintenance,4,WH004,Marrakech Distribution,Marrakech,120,250,0,0,0,370,14-01-2026
+33,PROD033,Welding Electrode Mild Steel,Maintenance,3,WH003,Fès Logistics Hub,Fès,120,250,0,0,0,370,14-01-2026
+33,PROD033,Welding Electrode Mild Steel,Maintenance,10,WH010,El Jadida Storage Facility,El Jadida,110,250,0,0,0,360,14-01-2026
+11,PROD011,Packing Tape (50mm),Packaging,8,WH008,Oujda Border Warehouse,Oujda,156,200,0,0,0,356,14-01-2026
+12,PROD012,Bubble Wrap 500mm,Packaging,2,WH002,Rabat Distribution Center,Rabat,200,150,0,0,0,350,14-01-2026
+33,PROD033,Welding Electrode Mild Steel,Maintenance,6,WH006,Tangier Free Zone,Tangier,100,250,0,0,0,350,14-01-2026
+33,PROD033,Welding Electrode Mild Steel,Maintenance,1,WH001,Casablanca Main Hub,Casablanca,100,250,0,0,0,350,14-01-2026
+2,PROD002,Ballpoint Pens (box of 50),Office Supplies,9,WH009,Safi Industrial Park,Safi,250,100,0,0,0,350,14-01-2026
+11,PROD011,Packing Tape (50mm),Packaging,6,WH006,Tangier Free Zone,Tangier,96,250,0,0,0,346,14-01-2026
+25,PROD025,Toilet Paper (bulk roll),Cleaning Supplies,2,WH002,Rabat Distribution Center,Rabat,140,200,0,0,0,340,14-01-2026
+25,PROD025,Toilet Paper (bulk roll),Cleaning Supplies,1,WH001,Casablanca Main Hub,Casablanca,40,300,0,0,0,340,14-01-2026
+11,PROD011,Packing Tape (50mm),Packaging,3,WH003,Fès Logistics Hub,Fès,132,200,0,0,0,332,14-01-2026
+33,PROD033,Welding Electrode Mild Steel,Maintenance,8,WH008,Oujda Border Warehouse,Oujda,75,250,0,0,0,325,14-01-2026
+25,PROD025,Toilet Paper (bulk roll),Cleaning Supplies,9,WH009,Safi Industrial Park,Safi,120,200,0,0,0,320,14-01-2026
+14,PROD014,Safety Helmet Yellow,Safety Equipment,7,WH007,Meknes Distribution Point,Meknes,220,100,0,0,0,320,14-01-2026
+33,PROD033,Welding Electrode Mild Steel,Maintenance,5,WH005,Agadir Port Terminal,Agadir,20,300,0,0,0,320,14-01-2026
+2,PROD002,Ballpoint Pens (box of 50),Office Supplies,5,WH005,Agadir Port Terminal,Agadir,220,100,0,0,0,320,14-01-2026
+12,PROD012,Bubble Wrap 500mm,Packaging,7,WH007,Meknes Distribution Point,Meknes,160,150,0,0,0,310,14-01-2026
+1,PROD001,Office Paper A4 (500 sheets),Office Supplies,10,WH010,El Jadida Storage Facility,El Jadida,250,60,0,0,0,310,14-01-2026
+2,PROD002,Ballpoint Pens (box of 50),Office Supplies,10,WH010,El Jadida Storage Facility,El Jadida,210,100,0,0,0,310,14-01-2026
+1,PROD001,Office Paper A4 (500 sheets),Office Supplies,5,WH005,Agadir Port Terminal,Agadir,220,80,0,0,0,300,14-01-2026
+10,PROD010,Cardboard Boxes (Medium),Packaging,8,WH008,Oujda Border Warehouse,Oujda,200,100,0,0,0,300,14-01-2026
+15,PROD015,Safety Gloves (Nitrile),Safety Equipment,8,WH008,Oujda Border Warehouse,Oujda,100,200,0,0,0,300,14-01-2026
+33,PROD033,Welding Electrode Mild Steel,Maintenance,7,WH007,Meknes Distribution Point,Meknes,50,250,0,0,0,300,14-01-2026
+33,PROD033,Welding Electrode Mild Steel,Maintenance,2,WH002,Rabat Distribution Center,Rabat,50,250,0,0,0,300,14-01-2026
+11,PROD011,Packing Tape (50mm),Packaging,4,WH004,Marrakech Distribution,Marrakech,96,200,0,0,0,296,14-01-2026
+11,PROD011,Packing Tape (50mm),Packaging,1,WH001,Casablanca Main Hub,Casablanca,96,200,0,0,0,296,14-01-2026
+14,PROD014,Safety Helmet Yellow,Safety Equipment,2,WH002,Rabat Distribution Center,Rabat,190,100,0,0,0,290,14-01-2026
+25,PROD025,Toilet Paper (bulk roll),Cleaning Supplies,7,WH007,Meknes Distribution Point,Meknes,40,250,0,0,0,290,14-01-2026
+11,PROD011,Packing Tape (50mm),Packaging,10,WH010,El Jadida Storage Facility,El Jadida,84,200,0,0,0,284,14-01-2026
+1,PROD001,Office Paper A4 (500 sheets),Office Supplies,6,WH006,Tangier Free Zone,Tangier,210,50,0,0,0,260,14-01-2026
+12,PROD012,Bubble Wrap 500mm,Packaging,1,WH001,Casablanca Main Hub,Casablanca,100,150,0,0,0,250,14-01-2026
+1,PROD001,Office Paper A4 (500 sheets),Office Supplies,1,WH001,Casablanca Main Hub,Casablanca,150,100,0,0,0,250,14-01-2026
+12,PROD012,Bubble Wrap 500mm,Packaging,4,WH004,Marrakech Distribution,Marrakech,100,150,0,0,0,250,14-01-2026
+11,PROD011,Packing Tape (50mm),Packaging,5,WH005,Agadir Port Terminal,Agadir,48,200,0,0,0,248,14-01-2026
+25,PROD025,Toilet Paper (bulk roll),Cleaning Supplies,4,WH004,Marrakech Distribution,Marrakech,40,200,0,0,0,240,14-01-2026
+2,PROD002,Ballpoint Pens (box of 50),Office Supplies,2,WH002,Rabat Distribution Center,Rabat,140,100,0,0,0,240,14-01-2026
+25,PROD025,Toilet Paper (bulk roll),Cleaning Supplies,8,WH008,Oujda Border Warehouse,Oujda,40,200,0,0,0,240,14-01-2026
+10,PROD010,Cardboard Boxes (Medium),Packaging,5,WH005,Agadir Port Terminal,Agadir,55,180,0,0,0,235,14-01-2026
+11,PROD011,Packing Tape (50mm),Packaging,9,WH009,Safi Industrial Park,Safi,24,200,0,0,0,224,14-01-2026
+10,PROD010,Cardboard Boxes (Medium),Packaging,2,WH002,Rabat Distribution Center,Rabat,120,100,0,0,0,220,14-01-2026
+32,PROD032,Machine Oil ISO 46,Maintenance,7,WH007,Meknes Distribution Point,Meknes,120,100,0,0,0,220,14-01-2026
+12,PROD012,Bubble Wrap 500mm,Packaging,8,WH008,Oujda Border Warehouse,Oujda,70,150,0,0,0,220,14-01-2026
+1,PROD001,Office Paper A4 (500 sheets),Office Supplies,2,WH002,Rabat Distribution Center,Rabat,135,75,0,0,0,210,14-01-2026
+31,PROD031,Industrial Hydraulic Fluid,Maintenance,4,WH004,Marrakech Distribution,Marrakech,60,150,0,0,0,210,14-01-2026
+14,PROD014,Safety Helmet Yellow,Safety Equipment,1,WH001,Casablanca Main Hub,Casablanca,50,150,0,0,0,200,14-01-2026
+12,PROD012,Bubble Wrap 500mm,Packaging,6,WH006,Tangier Free Zone,Tangier,50,150,0,0,0,200,14-01-2026
+40,PROD040,Thermal Transfer Label,Packaging,9,WH009,Safi Industrial Park,Safi,95,100,0,0,0,195,14-01-2026
+10,PROD010,Cardboard Boxes (Medium),Packaging,7,WH007,Meknes Distribution Point,Meknes,90,100,0,0,0,190,14-01-2026
+10,PROD010,Cardboard Boxes (Medium),Packaging,3,WH003,Fès Logistics Hub,Fès,90,100,0,0,0,190,14-01-2026
+10,PROD010,Cardboard Boxes (Medium),Packaging,4,WH004,Marrakech Distribution,Marrakech,90,100,0,0,0,190,14-01-2026
+10,PROD010,Cardboard Boxes (Medium),Packaging,10,WH010,El Jadida Storage Facility,El Jadida,85,100,0,0,0,185,14-01-2026
+32,PROD032,Machine Oil ISO 46,Maintenance,3,WH003,Fès Logistics Hub,Fès,80,100,0,0,0,180,14-01-2026
+32,PROD032,Machine Oil ISO 46,Maintenance,4,WH004,Marrakech Distribution,Marrakech,60,120,0,0,0,180,14-01-2026
+31,PROD031,Industrial Hydraulic Fluid,Maintenance,7,WH007,Meknes Distribution Point,Meknes,80,100,0,0,0,180,14-01-2026
+32,PROD032,Machine Oil ISO 46,Maintenance,8,WH008,Oujda Border Warehouse,Oujda,80,100,0,0,0,180,14-01-2026
+31,PROD031,Industrial Hydraulic Fluid,Maintenance,9,WH009,Safi Industrial Park,Safi,70,100,0,0,0,170,14-01-2026
+32,PROD032,Machine Oil ISO 46,Maintenance,10,WH010,El Jadida Storage Facility,El Jadida,70,100,0,0,0,170,14-01-2026
+40,PROD040,Thermal Transfer Label,Packaging,8,WH008,Oujda Border Warehouse,Oujda,50,120,0,0,0,170,14-01-2026
+40,PROD040,Thermal Transfer Label,Packaging,7,WH007,Meknes Distribution Point,Meknes,65,100,0,0,0,165,14-01-2026
+10,PROD010,Cardboard Boxes (Medium),Packaging,6,WH006,Tangier Free Zone,Tangier,60,100,0,0,0,160,14-01-2026
+32,PROD032,Machine Oil ISO 46,Maintenance,6,WH006,Tangier Free Zone,Tangier,60,100,0,0,0,160,14-01-2026
+40,PROD040,Thermal Transfer Label,Packaging,3,WH003,Fès Logistics Hub,Fès,60,100,0,0,0,160,14-01-2026
+31,PROD031,Industrial Hydraulic Fluid,Maintenance,6,WH006,Tangier Free Zone,Tangier,60,100,0,0,0,160,14-01-2026
+12,PROD012,Bubble Wrap 500mm,Packaging,5,WH005,Agadir Port Terminal,Agadir,10,150,0,0,0,160,14-01-2026
+17,PROD017,Fluorescent Light Bulbs,Lighting,1,WH001,Casablanca Main Hub,Casablanca,55,100,0,0,0,155,14-01-2026
+40,PROD040,Thermal Transfer Label,Packaging,10,WH010,El Jadida Storage Facility,El Jadida,55,100,0,0,0,155,14-01-2026
+31,PROD031,Industrial Hydraulic Fluid,Maintenance,10,WH010,El Jadida Storage Facility,El Jadida,50,100,0,0,0,150,14-01-2026
+31,PROD031,Industrial Hydraulic Fluid,Maintenance,1,WH001,Casablanca Main Hub,Casablanca,40,100,0,0,0,140,14-01-2026
+31,PROD031,Industrial Hydraulic Fluid,Maintenance,5,WH005,Agadir Port Terminal,Agadir,40,100,0,0,0,140,14-01-2026
+2,PROD002,Ballpoint Pens (box of 50),Office Supplies,8,WH008,Oujda Border Warehouse,Oujda,40,100,0,0,0,140,14-01-2026
+32,PROD032,Machine Oil ISO 46,Maintenance,9,WH009,Safi Industrial Park,Safi,40,100,0,0,0,140,14-01-2026
+31,PROD031,Industrial Hydraulic Fluid,Maintenance,8,WH008,Oujda Border Warehouse,Oujda,40,100,0,0,0,140,14-01-2026
+32,PROD032,Machine Oil ISO 46,Maintenance,5,WH005,Agadir Port Terminal,Agadir,40,100,0,0,0,140,14-01-2026
+2,PROD002,Ballpoint Pens (box of 50),Office Supplies,4,WH004,Marrakech Distribution,Marrakech,40,100,0,0,0,140,14-01-2026
+31,PROD031,Industrial Hydraulic Fluid,Maintenance,2,WH002,Rabat Distribution Center,Rabat,40,100,0,0,0,140,14-01-2026
+32,PROD032,Machine Oil ISO 46,Maintenance,2,WH002,Rabat Distribution Center,Rabat,40,100,0,0,0,140,14-01-2026
+10,PROD010,Cardboard Boxes (Medium),Packaging,9,WH009,Safi Industrial Park,Safi,30,100,0,0,0,130,14-01-2026
+40,PROD040,Thermal Transfer Label,Packaging,1,WH001,Casablanca Main Hub,Casablanca,20,100,0,0,0,120,14-01-2026
+40,PROD040,Thermal Transfer Label,Packaging,2,WH002,Rabat Distribution Center,Rabat,20,100,0,0,0,120,14-01-2026
+31,PROD031,Industrial Hydraulic Fluid,Maintenance,3,WH003,Fès Logistics Hub,Fès,20,100,0,0,0,120,14-01-2026
+40,PROD040,Thermal Transfer Label,Packaging,6,WH006,Tangier Free Zone,Tangier,10,100,0,0,0,110,14-01-2026
+1,PROD001,Office Paper A4 (500 sheets),Office Supplies,4,WH004,Marrakech Distribution,Marrakech,60,50,0,0,0,110,14-01-2026
+40,PROD040,Thermal Transfer Label,Packaging,5,WH005,Agadir Port Terminal,Agadir,10,100,0,0,0,110,14-01-2026
+1,PROD001,Office Paper A4 (500 sheets),Office Supplies,9,WH009,Safi Industrial Park,Safi,55,50,0,0,0,105,14-01-2026
+17,PROD017,Fluorescent Light Bulbs,Lighting,2,WH002,Rabat Distribution Center,Rabat,50,50,0,0,0,100,14-01-2026
+17,PROD017,Fluorescent Light Bulbs,Lighting,3,WH003,Fès Logistics Hub,Fès,50,50,0,0,0,100,14-01-2026
+1,PROD001,Office Paper A4 (500 sheets),Office Supplies,7,WH007,Meknes Distribution Point,Meknes,50,50,0,0,0,100,14-01-2026
+17,PROD017,Fluorescent Light Bulbs,Lighting,5,WH005,Agadir Port Terminal,Agadir,45,50,0,0,0,95,14-01-2026
+29,PROD029,Extension Power Strip 6-outlet,Electrical,2,WH002,Rabat Distribution Center,Rabat,20,70,0,0,0,90,14-01-2026
+29,PROD029,Extension Power Strip 6-outlet,Electrical,7,WH007,Meknes Distribution Point,Meknes,40,50,0,0,0,90,14-01-2026
+17,PROD017,Fluorescent Light Bulbs,Lighting,7,WH007,Meknes Distribution Point,Meknes,10,80,0,0,0,90,14-01-2026
+22,PROD022,Hand Sanitizer 5L,Cleaning Supplies,2,WH002,Rabat Distribution Center,Rabat,10,80,0,0,0,90,14-01-2026
+1,PROD001,Office Paper A4 (500 sheets),Office Supplies,3,WH003,Fès Logistics Hub,Fès,40,50,0,0,0,90,14-01-2026
+4,PROD004,USB Cable 2m,IT Equipment,6,WH006,Tangier Free Zone,Tangier,40,50,0,0,0,90,14-01-2026
+1,PROD001,Office Paper A4 (500 sheets),Office Supplies,8,WH008,Oujda Border Warehouse,Oujda,40,50,0,0,0,90,14-01-2026
+29,PROD029,Extension Power Strip 6-outlet,Electrical,9,WH009,Safi Industrial Park,Safi,30,50,0,0,0,80,14-01-2026
+17,PROD017,Fluorescent Light Bulbs,Lighting,8,WH008,Oujda Border Warehouse,Oujda,30,50,0,0,0,80,14-01-2026
+17,PROD017,Fluorescent Light Bulbs,Lighting,9,WH009,Safi Industrial Park,Safi,30,50,0,0,0,80,14-01-2026
+17,PROD017,Fluorescent Light Bulbs,Lighting,10,WH010,El Jadida Storage Facility,El Jadida,30,50,0,0,0,80,14-01-2026
+4,PROD004,USB Cable 2m,IT Equipment,8,WH008,Oujda Border Warehouse,Oujda,29,50,0,0,0,79,14-01-2026
+37,PROD037,Industrial Belt Conveyor,Machinery,6,WH006,Tangier Free Zone,Tangier,4,75,0,0,0,79,14-01-2026
+4,PROD004,USB Cable 2m,IT Equipment,5,WH005,Agadir Port Terminal,Agadir,20,55,0,0,0,75,14-01-2026
+4,PROD004,USB Cable 2m,IT Equipment,3,WH003,Fès Logistics Hub,Fès,23,50,0,0,0,73,14-01-2026
+4,PROD004,USB Cable 2m,IT Equipment,7,WH007,Meknes Distribution Point,Meknes,20,50,0,0,0,70,14-01-2026
+17,PROD017,Fluorescent Light Bulbs,Lighting,6,WH006,Tangier Free Zone,Tangier,20,50,0,0,0,70,14-01-2026
+4,PROD004,USB Cable 2m,IT Equipment,4,WH004,Marrakech Distribution,Marrakech,20,50,0,0,0,70,14-01-2026
+29,PROD029,Extension Power Strip 6-outlet,Electrical,10,WH010,El Jadida Storage Facility,El Jadida,10,60,0,0,0,70,14-01-2026
+4,PROD004,USB Cable 2m,IT Equipment,2,WH002,Rabat Distribution Center,Rabat,10,60,0,0,0,70,14-01-2026
+29,PROD029,Extension Power Strip 6-outlet,Electrical,6,WH006,Tangier Free Zone,Tangier,20,50,0,0,0,70,14-01-2026
+3,PROD003,Printer Ink Cartridge (Black),IT Equipment,6,WH006,Tangier Free Zone,Tangier,7,60,0,0,0,67,14-01-2026
+30,PROD030,Surge Protector Power Bar,Electrical,10,WH010,El Jadida Storage Facility,El Jadida,32,35,0,0,0,67,14-01-2026
+22,PROD022,Hand Sanitizer 5L,Cleaning Supplies,8,WH008,Oujda Border Warehouse,Oujda,15,50,0,0,0,65,14-01-2026
+22,PROD022,Hand Sanitizer 5L,Cleaning Supplies,3,WH003,Fès Logistics Hub,Fès,15,50,0,0,0,65,14-01-2026
+22,PROD022,Hand Sanitizer 5L,Cleaning Supplies,6,WH006,Tangier Free Zone,Tangier,15,50,0,0,0,65,14-01-2026
+22,PROD022,Hand Sanitizer 5L,Cleaning Supplies,1,WH001,Casablanca Main Hub,Casablanca,15,50,0,0,0,65,14-01-2026
+22,PROD022,Hand Sanitizer 5L,Cleaning Supplies,5,WH005,Agadir Port Terminal,Agadir,14,50,0,0,0,64,14-01-2026
+4,PROD004,USB Cable 2m,IT Equipment,10,WH010,El Jadida Storage Facility,El Jadida,10,50,0,0,0,60,14-01-2026
+3,PROD003,Printer Ink Cartridge (Black),IT Equipment,1,WH001,Casablanca Main Hub,Casablanca,9,50,0,0,0,59,14-01-2026
+4,PROD004,USB Cable 2m,IT Equipment,1,WH001,Casablanca Main Hub,Casablanca,6,50,0,0,0,56,14-01-2026
+37,PROD037,Industrial Belt Conveyor,Machinery,3,WH003,Fès Logistics Hub,Fès,5,50,0,0,0,55,14-01-2026
+4,PROD004,USB Cable 2m,IT Equipment,9,WH009,Safi Industrial Park,Safi,5,50,0,0,0,55,14-01-2026
+22,PROD022,Hand Sanitizer 5L,Cleaning Supplies,9,WH009,Safi Industrial Park,Safi,5,50,0,0,0,55,14-01-2026
+30,PROD030,Surge Protector Power Bar,Electrical,9,WH009,Safi Industrial Park,Safi,24,30,0,0,0,54,14-01-2026
+37,PROD037,Industrial Belt Conveyor,Machinery,7,WH007,Meknes Distribution Point,Meknes,4,50,0,0,0,54,14-01-2026
+37,PROD037,Industrial Belt Conveyor,Machinery,5,WH005,Agadir Port Terminal,Agadir,2,50,0,0,0,52,14-01-2026
+37,PROD037,Industrial Belt Conveyor,Machinery,2,WH002,Rabat Distribution Center,Rabat,2,50,0,0,0,52,14-01-2026
+37,PROD037,Industrial Belt Conveyor,Machinery,1,WH001,Casablanca Main Hub,Casablanca,1,50,0,0,0,51,14-01-2026
+37,PROD037,Industrial Belt Conveyor,Machinery,9,WH009,Safi Industrial Park,Safi,1,50,0,0,0,51,14-01-2026
+37,PROD037,Industrial Belt Conveyor,Machinery,4,WH004,Marrakech Distribution,Marrakech,1,50,0,0,0,51,14-01-2026
+30,PROD030,Surge Protector Power Bar,Electrical,4,WH004,Marrakech Distribution,Marrakech,20,30,0,0,0,50,14-01-2026
+30,PROD030,Surge Protector Power Bar,Electrical,5,WH005,Agadir Port Terminal,Agadir,16,30,0,0,0,46,14-01-2026
+3,PROD003,Printer Ink Cartridge (Black),IT Equipment,4,WH004,Marrakech Distribution,Marrakech,11,35,0,0,0,46,14-01-2026
+3,PROD003,Printer Ink Cartridge (Black),IT Equipment,3,WH003,Fès Logistics Hub,Fès,17,25,0,0,0,42,14-01-2026
+5,PROD005,Wireless Mouse,IT Equipment,4,WH004,Marrakech Distribution,Marrakech,15,25,0,0,0,40,14-01-2026
+3,PROD003,Printer Ink Cartridge (Black),IT Equipment,2,WH002,Rabat Distribution Center,Rabat,14,25,0,0,0,39,14-01-2026
+30,PROD030,Surge Protector Power Bar,Electrical,7,WH007,Meknes Distribution Point,Meknes,8,30,0,0,0,38,14-01-2026
+5,PROD005,Wireless Mouse,IT Equipment,1,WH001,Casablanca Main Hub,Casablanca,8,30,0,0,0,38,14-01-2026
+3,PROD003,Printer Ink Cartridge (Black),IT Equipment,5,WH005,Agadir Port Terminal,Agadir,12,25,0,0,0,37,14-01-2026
+3,PROD003,Printer Ink Cartridge (Black),IT Equipment,8,WH008,Oujda Border Warehouse,Oujda,7,25,0,0,0,32,14-01-2026
+3,PROD003,Printer Ink Cartridge (Black),IT Equipment,10,WH010,El Jadida Storage Facility,El Jadida,7,25,0,0,0,32,14-01-2026
+3,PROD003,Printer Ink Cartridge (Black),IT Equipment,7,WH007,Meknes Distribution Point,Meknes,6,25,0,0,0,31,14-01-2026
+5,PROD005,Wireless Mouse,IT Equipment,10,WH010,El Jadida Storage Facility,El Jadida,10,20,0,0,0,30,14-01-2026
+5,PROD005,Wireless Mouse,IT Equipment,6,WH006,Tangier Free Zone,Tangier,10,20,0,0,0,30,14-01-2026
+3,PROD003,Printer Ink Cartridge (Black),IT Equipment,9,WH009,Safi Industrial Park,Safi,5,25,0,0,0,30,14-01-2026
+18,PROD018,LED Desk Lamp,Lighting,2,WH002,Rabat Distribution Center,Rabat,4,25,0,0,0,29,14-01-2026
+5,PROD005,Wireless Mouse,IT Equipment,2,WH002,Rabat Distribution Center,Rabat,8,20,0,0,0,28,14-01-2026
+5,PROD005,Wireless Mouse,IT Equipment,9,WH009,Safi Industrial Park,Safi,6,20,0,0,0,26,14-01-2026
+5,PROD005,Wireless Mouse,IT Equipment,3,WH003,Fès Logistics Hub,Fès,6,20,0,0,0,26,14-01-2026
+5,PROD005,Wireless Mouse,IT Equipment,7,WH007,Meknes Distribution Point,Meknes,5,20,0,0,0,25,14-01-2026
+5,PROD005,Wireless Mouse,IT Equipment,8,WH008,Oujda Border Warehouse,Oujda,5,20,0,0,0,25,14-01-2026
+18,PROD018,LED Desk Lamp,Lighting,8,WH008,Oujda Border Warehouse,Oujda,10,15,0,0,0,25,14-01-2026
+16,PROD016,First Aid Kit Standard,Safety Equipment,3,WH003,Fès Logistics Hub,Fès,9,15,0,0,0,24,14-01-2026
+18,PROD018,LED Desk Lamp,Lighting,6,WH006,Tangier Free Zone,Tangier,9,15,0,0,0,24,14-01-2026
+28,PROD028,Fire Extinguisher 2kg,Safety Equipment,3,WH003,Fès Logistics Hub,Fès,8,15,0,0,0,23,14-01-2026
+7,PROD007,Laptop Stand Aluminum,Office Furniture,6,WH006,Tangier Free Zone,Tangier,13,10,0,0,0,23,14-01-2026
+18,PROD018,LED Desk Lamp,Lighting,4,WH004,Marrakech Distribution,Marrakech,8,15,0,0,0,23,14-01-2026
+7,PROD007,Laptop Stand Aluminum,Office Furniture,4,WH004,Marrakech Distribution,Marrakech,11,10,0,0,0,21,14-01-2026
+7,PROD007,Laptop Stand Aluminum,Office Furniture,1,WH001,Casablanca Main Hub,Casablanca,11,10,0,0,0,21,14-01-2026
+5,PROD005,Wireless Mouse,IT Equipment,5,WH005,Agadir Port Terminal,Agadir,1,20,0,0,0,21,14-01-2026
+7,PROD007,Laptop Stand Aluminum,Office Furniture,3,WH003,Fès Logistics Hub,Fès,6,15,0,0,0,21,14-01-2026
+18,PROD018,LED Desk Lamp,Lighting,10,WH010,El Jadida Storage Facility,El Jadida,6,15,0,0,0,21,14-01-2026
+16,PROD016,First Aid Kit Standard,Safety Equipment,6,WH006,Tangier Free Zone,Tangier,10,10,0,0,0,20,14-01-2026
+34,PROD034,Bearing Roller Stainless Steel,Maintenance,8,WH008,Oujda Border Warehouse,Oujda,9,10,0,0,0,19,14-01-2026
+18,PROD018,LED Desk Lamp,Lighting,7,WH007,Meknes Distribution Point,Meknes,4,15,0,0,0,19,14-01-2026
+16,PROD016,First Aid Kit Standard,Safety Equipment,10,WH010,El Jadida Storage Facility,El Jadida,9,10,0,0,0,19,14-01-2026
+34,PROD034,Bearing Roller Stainless Steel,Maintenance,7,WH007,Meknes Distribution Point,Meknes,9,10,0,0,0,19,14-01-2026
+18,PROD018,LED Desk Lamp,Lighting,3,WH003,Fès Logistics Hub,Fès,4,15,0,0,0,19,14-01-2026
+34,PROD034,Bearing Roller Stainless Steel,Maintenance,5,WH005,Agadir Port Terminal,Agadir,6,12,0,0,0,18,14-01-2026
+34,PROD034,Bearing Roller Stainless Steel,Maintenance,1,WH001,Casablanca Main Hub,Casablanca,8,10,0,0,0,18,14-01-2026
+16,PROD016,First Aid Kit Standard,Safety Equipment,8,WH008,Oujda Border Warehouse,Oujda,8,10,0,0,0,18,14-01-2026
+18,PROD018,LED Desk Lamp,Lighting,5,WH005,Agadir Port Terminal,Agadir,3,15,0,0,0,18,14-01-2026
+28,PROD028,Fire Extinguisher 2kg,Safety Equipment,10,WH010,El Jadida Storage Facility,El Jadida,6,12,0,0,0,18,14-01-2026
+16,PROD016,First Aid Kit Standard,Safety Equipment,9,WH009,Safi Industrial Park,Safi,6,10,0,0,0,16,14-01-2026
+16,PROD016,First Aid Kit Standard,Safety Equipment,1,WH001,Casablanca Main Hub,Casablanca,6,10,0,0,0,16,14-01-2026
+18,PROD018,LED Desk Lamp,Lighting,1,WH001,Casablanca Main Hub,Casablanca,1,15,0,0,0,16,14-01-2026
+28,PROD028,Fire Extinguisher 2kg,Safety Equipment,7,WH007,Meknes Distribution Point,Meknes,6,10,0,0,0,16,14-01-2026
+18,PROD018,LED Desk Lamp,Lighting,9,WH009,Safi Industrial Park,Safi,1,15,0,0,0,16,14-01-2026
+34,PROD034,Bearing Roller Stainless Steel,Maintenance,9,WH009,Safi Industrial Park,Safi,5,10,0,0,0,15,14-01-2026
+34,PROD034,Bearing Roller Stainless Steel,Maintenance,4,WH004,Marrakech Distribution,Marrakech,5,10,0,0,0,15,14-01-2026
+7,PROD007,Laptop Stand Aluminum,Office Furniture,10,WH010,El Jadida Storage Facility,El Jadida,5,10,0,0,0,15,14-01-2026
+6,PROD006,LCD Monitor 24 inch,IT Equipment,3,WH003,Fès Logistics Hub,Fès,10,5,0,0,0,15,14-01-2026
+28,PROD028,Fire Extinguisher 2kg,Safety Equipment,8,WH008,Oujda Border Warehouse,Oujda,5,10,0,0,0,15,14-01-2026
+7,PROD007,Laptop Stand Aluminum,Office Furniture,8,WH008,Oujda Border Warehouse,Oujda,5,10,0,0,0,15,14-01-2026
+7,PROD007,Laptop Stand Aluminum,Office Furniture,5,WH005,Agadir Port Terminal,Agadir,5,10,0,0,0,15,14-01-2026
+28,PROD028,Fire Extinguisher 2kg,Safety Equipment,9,WH009,Safi Industrial Park,Safi,5,10,0,0,0,15,14-01-2026
+6,PROD006,LCD Monitor 24 inch,IT Equipment,6,WH006,Tangier Free Zone,Tangier,5,10,0,0,0,15,14-01-2026
+6,PROD006,LCD Monitor 24 inch,IT Equipment,9,WH009,Safi Industrial Park,Safi,9,5,0,0,0,14,14-01-2026
+28,PROD028,Fire Extinguisher 2kg,Safety Equipment,5,WH005,Agadir Port Terminal,Agadir,4,10,0,0,0,14,14-01-2026
+16,PROD016,First Aid Kit Standard,Safety Equipment,7,WH007,Meknes Distribution Point,Meknes,4,10,0,0,0,14,14-01-2026
+19,PROD019,Coffee Machine 10-cup,Kitchen Equipment,2,WH002,Rabat Distribution Center,Rabat,12,2,0,0,0,14,14-01-2026
+20,PROD020,Refrigerator 500L,Kitchen Equipment,2,WH002,Rabat Distribution Center,Rabat,12,1,0,0,0,13,14-01-2026
+7,PROD007,Laptop Stand Aluminum,Office Furniture,9,WH009,Safi Industrial Park,Safi,3,10,0,0,0,13,14-01-2026
+6,PROD006,LCD Monitor 24 inch,IT Equipment,8,WH008,Oujda Border Warehouse,Oujda,8,5,0,0,0,13,14-01-2026
+28,PROD028,Fire Extinguisher 2kg,Safety Equipment,2,WH002,Rabat Distribution Center,Rabat,3,10,0,0,0,13,14-01-2026
+28,PROD028,Fire Extinguisher 2kg,Safety Equipment,4,WH004,Marrakech Distribution,Marrakech,3,10,0,0,0,13,14-01-2026
+16,PROD016,First Aid Kit Standard,Safety Equipment,5,WH005,Agadir Port Terminal,Agadir,3,10,0,0,0,13,14-01-2026
+23,PROD023,Floor Cleaning Mop,Cleaning Supplies,7,WH007,Meknes Distribution Point,Meknes,8,5,0,0,0,13,14-01-2026
+16,PROD016,First Aid Kit Standard,Safety Equipment,2,WH002,Rabat Distribution Center,Rabat,3,10,0,0,0,13,14-01-2026
+34,PROD034,Bearing Roller Stainless Steel,Maintenance,2,WH002,Rabat Distribution Center,Rabat,3,10,0,0,0,13,14-01-2026
+39,PROD039,PLC Control Module,IT Equipment,3,WH003,Fès Logistics Hub,Fès,10,3,0,0,0,13,14-01-2026
+16,PROD016,First Aid Kit Standard,Safety Equipment,4,WH004,Marrakech Distribution,Marrakech,2,10,0,0,0,12,14-01-2026
+34,PROD034,Bearing Roller Stainless Steel,Maintenance,10,WH010,El Jadida Storage Facility,El Jadida,2,10,0,0,0,12,14-01-2026
+39,PROD039,PLC Control Module,IT Equipment,4,WH004,Marrakech Distribution,Marrakech,9,3,0,0,0,12,14-01-2026
+28,PROD028,Fire Extinguisher 2kg,Safety Equipment,1,WH001,Casablanca Main Hub,Casablanca,2,10,0,0,0,12,14-01-2026
+6,PROD006,LCD Monitor 24 inch,IT Equipment,1,WH001,Casablanca Main Hub,Casablanca,7,5,0,0,0,12,14-01-2026
+6,PROD006,LCD Monitor 24 inch,IT Equipment,10,WH010,El Jadida Storage Facility,El Jadida,7,5,0,0,0,12,14-01-2026
+34,PROD034,Bearing Roller Stainless Steel,Maintenance,3,WH003,Fès Logistics Hub,Fès,2,10,0,0,0,12,14-01-2026
+7,PROD007,Laptop Stand Aluminum,Office Furniture,2,WH002,Rabat Distribution Center,Rabat,1,10,0,0,0,11,14-01-2026
+9,PROD009,Metal Shelving Unit 4-tier,Warehouse Equipment,3,WH003,Fès Logistics Hub,Fès,8,3,0,0,0,11,14-01-2026
+8,PROD008,Office Chair Ergonomic,Office Furniture,4,WH004,Marrakech Distribution,Marrakech,8,3,0,0,0,11,14-01-2026
+23,PROD023,Floor Cleaning Mop,Cleaning Supplies,6,WH006,Tangier Free Zone,Tangier,6,5,0,0,0,11,14-01-2026
+39,PROD039,PLC Control Module,IT Equipment,9,WH009,Safi Industrial Park,Safi,8,3,0,0,0,11,14-01-2026
+6,PROD006,LCD Monitor 24 inch,IT Equipment,2,WH002,Rabat Distribution Center,Rabat,3,8,0,0,0,11,14-01-2026
+8,PROD008,Office Chair Ergonomic,Office Furniture,6,WH006,Tangier Free Zone,Tangier,8,3,0,0,0,11,14-01-2026
+8,PROD008,Office Chair Ergonomic,Office Furniture,2,WH002,Rabat Distribution Center,Rabat,8,3,0,0,0,11,14-01-2026
+8,PROD008,Office Chair Ergonomic,Office Furniture,10,WH010,El Jadida Storage Facility,El Jadida,8,3,0,0,0,11,14-01-2026
+39,PROD039,PLC Control Module,IT Equipment,6,WH006,Tangier Free Zone,Tangier,7,3,0,0,0,10,14-01-2026
+35,PROD035,Pump Centrifugal 1HP,Machinery,6,WH006,Tangier Free Zone,Tangier,8,2,0,0,0,10,14-01-2026
+8,PROD008,Office Chair Ergonomic,Office Furniture,8,WH008,Oujda Border Warehouse,Oujda,6,4,0,0,0,10,14-01-2026
+38,PROD038,Pneumatic Cylinder Actuator,Machinery,7,WH007,Meknes Distribution Point,Meknes,5,5,0,0,0,10,14-01-2026
+19,PROD019,Coffee Machine 10-cup,Kitchen Equipment,10,WH010,El Jadida Storage Facility,El Jadida,8,2,0,0,0,10,14-01-2026
+39,PROD039,PLC Control Module,IT Equipment,8,WH008,Oujda Border Warehouse,Oujda,6,4,0,0,0,10,14-01-2026
+35,PROD035,Pump Centrifugal 1HP,Machinery,3,WH003,Fès Logistics Hub,Fès,8,1,0,0,0,9,14-01-2026
+38,PROD038,Pneumatic Cylinder Actuator,Machinery,3,WH003,Fès Logistics Hub,Fès,4,5,0,0,0,9,14-01-2026
+26,PROD026,Door Lock Digital,Security,2,WH002,Rabat Distribution Center,Rabat,6,3,0,0,0,9,14-01-2026
+9,PROD009,Metal Shelving Unit 4-tier,Warehouse Equipment,9,WH009,Safi Industrial Park,Safi,5,4,0,0,0,9,14-01-2026
+38,PROD038,Pneumatic Cylinder Actuator,Machinery,10,WH010,El Jadida Storage Facility,El Jadida,4,5,0,0,0,9,14-01-2026
+23,PROD023,Floor Cleaning Mop,Cleaning Supplies,9,WH009,Safi Industrial Park,Safi,4,5,0,0,0,9,14-01-2026
+38,PROD038,Pneumatic Cylinder Actuator,Machinery,6,WH006,Tangier Free Zone,Tangier,1,8,0,0,0,9,14-01-2026
+6,PROD006,LCD Monitor 24 inch,IT Equipment,5,WH005,Agadir Port Terminal,Agadir,4,5,0,0,0,9,14-01-2026
+23,PROD023,Floor Cleaning Mop,Cleaning Supplies,5,WH005,Agadir Port Terminal,Agadir,4,5,0,0,0,9,14-01-2026
+19,PROD019,Coffee Machine 10-cup,Kitchen Equipment,4,WH004,Marrakech Distribution,Marrakech,7,2,0,0,0,9,14-01-2026
+9,PROD009,Metal Shelving Unit 4-tier,Warehouse Equipment,4,WH004,Marrakech Distribution,Marrakech,6,2,0,0,0,8,14-01-2026
+8,PROD008,Office Chair Ergonomic,Office Furniture,1,WH001,Casablanca Main Hub,Casablanca,3,5,0,0,0,8,14-01-2026
+6,PROD006,LCD Monitor 24 inch,IT Equipment,4,WH004,Marrakech Distribution,Marrakech,3,5,0,0,0,8,14-01-2026
+13,PROD013,Forklift Pallet Jack,Warehouse Equipment,10,WH010,El Jadida Storage Facility,El Jadida,7,1,0,0,0,8,14-01-2026
+38,PROD038,Pneumatic Cylinder Actuator,Machinery,2,WH002,Rabat Distribution Center,Rabat,3,5,0,0,0,8,14-01-2026
+35,PROD035,Pump Centrifugal 1HP,Machinery,5,WH005,Agadir Port Terminal,Agadir,7,1,0,0,0,8,14-01-2026
+19,PROD019,Coffee Machine 10-cup,Kitchen Equipment,5,WH005,Agadir Port Terminal,Agadir,6,2,0,0,0,8,14-01-2026
+36,PROD036,Electric Motor 3HP,Machinery,8,WH008,Oujda Border Warehouse,Oujda,7,1,0,0,0,8,14-01-2026
+19,PROD019,Coffee Machine 10-cup,Kitchen Equipment,9,WH009,Safi Industrial Park,Safi,5,3,0,0,0,8,14-01-2026
+8,PROD008,Office Chair Ergonomic,Office Furniture,9,WH009,Safi Industrial Park,Safi,5,3,0,0,0,8,14-01-2026
+19,PROD019,Coffee Machine 10-cup,Kitchen Equipment,6,WH006,Tangier Free Zone,Tangier,5,2,0,0,0,7,14-01-2026
+38,PROD038,Pneumatic Cylinder Actuator,Machinery,4,WH004,Marrakech Distribution,Marrakech,2,5,0,0,0,7,14-01-2026
+39,PROD039,PLC Control Module,IT Equipment,7,WH007,Meknes Distribution Point,Meknes,4,3,0,0,0,7,14-01-2026
+35,PROD035,Pump Centrifugal 1HP,Machinery,10,WH010,El Jadida Storage Facility,El Jadida,6,1,0,0,0,7,14-01-2026
+27,PROD027,CCTV Camera 1080p,Security,9,WH009,Safi Industrial Park,Safi,5,2,0,0,0,7,14-01-2026
+26,PROD026,Door Lock Digital,Security,5,WH005,Agadir Port Terminal,Agadir,2,5,0,0,0,7,14-01-2026
+20,PROD020,Refrigerator 500L,Kitchen Equipment,1,WH001,Casablanca Main Hub,Casablanca,6,1,0,0,0,7,14-01-2026
+19,PROD019,Coffee Machine 10-cup,Kitchen Equipment,8,WH008,Oujda Border Warehouse,Oujda,5,2,0,0,0,7,14-01-2026
+19,PROD019,Coffee Machine 10-cup,Kitchen Equipment,1,WH001,Casablanca Main Hub,Casablanca,2,5,0,0,0,7,14-01-2026
+36,PROD036,Electric Motor 3HP,Machinery,4,WH004,Marrakech Distribution,Marrakech,6,1,0,0,0,7,14-01-2026
+19,PROD019,Coffee Machine 10-cup,Kitchen Equipment,7,WH007,Meknes Distribution Point,Meknes,5,2,0,0,0,7,14-01-2026
+36,PROD036,Electric Motor 3HP,Machinery,9,WH009,Safi Industrial Park,Safi,6,1,0,0,0,7,14-01-2026
+9,PROD009,Metal Shelving Unit 4-tier,Warehouse Equipment,5,WH005,Agadir Port Terminal,Agadir,5,2,0,0,0,7,14-01-2026
+23,PROD023,Floor Cleaning Mop,Cleaning Supplies,2,WH002,Rabat Distribution Center,Rabat,2,5,0,0,0,7,14-01-2026
+39,PROD039,PLC Control Module,IT Equipment,10,WH010,El Jadida Storage Facility,El Jadida,4,3,0,0,0,7,14-01-2026
+9,PROD009,Metal Shelving Unit 4-tier,Warehouse Equipment,8,WH008,Oujda Border Warehouse,Oujda,5,2,0,0,0,7,14-01-2026
+6,PROD006,LCD Monitor 24 inch,IT Equipment,7,WH007,Meknes Distribution Point,Meknes,1,5,0,0,0,6,14-01-2026
+23,PROD023,Floor Cleaning Mop,Cleaning Supplies,4,WH004,Marrakech Distribution,Marrakech,1,5,0,0,0,6,14-01-2026
+38,PROD038,Pneumatic Cylinder Actuator,Machinery,9,WH009,Safi Industrial Park,Safi,1,5,0,0,0,6,14-01-2026
+36,PROD036,Electric Motor 3HP,Machinery,5,WH005,Agadir Port Terminal,Agadir,5,1,0,0,0,6,14-01-2026
+8,PROD008,Office Chair Ergonomic,Office Furniture,7,WH007,Meknes Distribution Point,Meknes,3,3,0,0,0,6,14-01-2026
+9,PROD009,Metal Shelving Unit 4-tier,Warehouse Equipment,7,WH007,Meknes Distribution Point,Meknes,4,2,0,0,0,6,14-01-2026
+39,PROD039,PLC Control Module,IT Equipment,5,WH005,Agadir Port Terminal,Agadir,3,3,0,0,0,6,14-01-2026
+21,PROD021,Stainless Steel Sink,Kitchen Equipment,7,WH007,Meknes Distribution Point,Meknes,4,2,0,0,0,6,14-01-2026
+21,PROD021,Stainless Steel Sink,Kitchen Equipment,6,WH006,Tangier Free Zone,Tangier,5,1,0,0,0,6,14-01-2026
+36,PROD036,Electric Motor 3HP,Machinery,7,WH007,Meknes Distribution Point,Meknes,5,1,0,0,0,6,14-01-2026
+38,PROD038,Pneumatic Cylinder Actuator,Machinery,1,WH001,Casablanca Main Hub,Casablanca,1,5,0,0,0,6,14-01-2026
+20,PROD020,Refrigerator 500L,Kitchen Equipment,7,WH007,Meknes Distribution Point,Meknes,5,1,0,0,0,6,14-01-2026
+36,PROD036,Electric Motor 3HP,Machinery,1,WH001,Casablanca Main Hub,Casablanca,5,1,0,0,0,6,14-01-2026
+35,PROD035,Pump Centrifugal 1HP,Machinery,8,WH008,Oujda Border Warehouse,Oujda,5,1,0,0,0,6,14-01-2026
+26,PROD026,Door Lock Digital,Security,10,WH010,El Jadida Storage Facility,El Jadida,3,3,0,0,0,6,14-01-2026
+36,PROD036,Electric Motor 3HP,Machinery,6,WH006,Tangier Free Zone,Tangier,4,2,0,0,0,6,14-01-2026
+35,PROD035,Pump Centrifugal 1HP,Machinery,7,WH007,Meknes Distribution Point,Meknes,5,1,0,0,0,6,14-01-2026
+27,PROD027,CCTV Camera 1080p,Security,2,WH002,Rabat Distribution Center,Rabat,4,2,0,0,0,6,14-01-2026
+24,PROD024,Industrial Vacuum Cleaner,Cleaning Supplies,2,WH002,Rabat Distribution Center,Rabat,4,2,0,0,0,6,14-01-2026
+39,PROD039,PLC Control Module,IT Equipment,2,WH002,Rabat Distribution Center,Rabat,3,3,0,0,0,6,14-01-2026
+35,PROD035,Pump Centrifugal 1HP,Machinery,9,WH009,Safi Industrial Park,Safi,5,1,0,0,0,6,14-01-2026
+27,PROD027,CCTV Camera 1080p,Security,3,WH003,Fès Logistics Hub,Fès,3,2,0,0,0,5,14-01-2026
+21,PROD021,Stainless Steel Sink,Kitchen Equipment,1,WH001,Casablanca Main Hub,Casablanca,4,1,0,0,0,5,14-01-2026
+39,PROD039,PLC Control Module,IT Equipment,1,WH001,Casablanca Main Hub,Casablanca,2,3,0,0,0,5,14-01-2026
+20,PROD020,Refrigerator 500L,Kitchen Equipment,5,WH005,Agadir Port Terminal,Agadir,4,1,0,0,0,5,14-01-2026
+20,PROD020,Refrigerator 500L,Kitchen Equipment,6,WH006,Tangier Free Zone,Tangier,4,1,0,0,0,5,14-01-2026
+21,PROD021,Stainless Steel Sink,Kitchen Equipment,9,WH009,Safi Industrial Park,Safi,4,1,0,0,0,5,14-01-2026
+8,PROD008,Office Chair Ergonomic,Office Furniture,5,WH005,Agadir Port Terminal,Agadir,2,3,0,0,0,5,14-01-2026
+27,PROD027,CCTV Camera 1080p,Security,1,WH001,Casablanca Main Hub,Casablanca,3,2,0,0,0,5,14-01-2026
+8,PROD008,Office Chair Ergonomic,Office Furniture,3,WH003,Fès Logistics Hub,Fès,2,3,0,0,0,5,14-01-2026
+26,PROD026,Door Lock Digital,Security,3,WH003,Fès Logistics Hub,Fès,2,3,0,0,0,5,14-01-2026
+9,PROD009,Metal Shelving Unit 4-tier,Warehouse Equipment,6,WH006,Tangier Free Zone,Tangier,3,2,0,0,0,5,14-01-2026
+19,PROD019,Coffee Machine 10-cup,Kitchen Equipment,3,WH003,Fès Logistics Hub,Fès,2,2,0,0,0,4,14-01-2026
+27,PROD027,CCTV Camera 1080p,Security,6,WH006,Tangier Free Zone,Tangier,2,2,0,0,0,4,14-01-2026
+21,PROD021,Stainless Steel Sink,Kitchen Equipment,4,WH004,Marrakech Distribution,Marrakech,3,1,0,0,0,4,14-01-2026
+13,PROD013,Forklift Pallet Jack,Warehouse Equipment,9,WH009,Safi Industrial Park,Safi,3,1,0,0,0,4,14-01-2026
+13,PROD013,Forklift Pallet Jack,Warehouse Equipment,4,WH004,Marrakech Distribution,Marrakech,2,2,0,0,0,4,14-01-2026
+26,PROD026,Door Lock Digital,Security,7,WH007,Meknes Distribution Point,Meknes,1,3,0,0,0,4,14-01-2026
+20,PROD020,Refrigerator 500L,Kitchen Equipment,10,WH010,El Jadida Storage Facility,El Jadida,3,1,0,0,0,4,14-01-2026
+21,PROD021,Stainless Steel Sink,Kitchen Equipment,10,WH010,El Jadida Storage Facility,El Jadida,3,1,0,0,0,4,14-01-2026
+26,PROD026,Door Lock Digital,Security,6,WH006,Tangier Free Zone,Tangier,1,3,0,0,0,4,14-01-2026
+9,PROD009,Metal Shelving Unit 4-tier,Warehouse Equipment,1,WH001,Casablanca Main Hub,Casablanca,2,2,0,0,0,4,14-01-2026
+9,PROD009,Metal Shelving Unit 4-tier,Warehouse Equipment,10,WH010,El Jadida Storage Facility,El Jadida,2,2,0,0,0,4,14-01-2026
+9,PROD009,Metal Shelving Unit 4-tier,Warehouse Equipment,2,WH002,Rabat Distribution Center,Rabat,2,2,0,0,0,4,14-01-2026
+21,PROD021,Stainless Steel Sink,Kitchen Equipment,5,WH005,Agadir Port Terminal,Agadir,2,1,0,0,0,3,14-01-2026
+13,PROD013,Forklift Pallet Jack,Warehouse Equipment,3,WH003,Fès Logistics Hub,Fès,2,1,0,0,0,3,14-01-2026
+27,PROD027,CCTV Camera 1080p,Security,10,WH010,El Jadida Storage Facility,El Jadida,1,2,0,0,0,3,14-01-2026
+27,PROD027,CCTV Camera 1080p,Security,5,WH005,Agadir Port Terminal,Agadir,1,2,0,0,0,3,14-01-2026
+20,PROD020,Refrigerator 500L,Kitchen Equipment,8,WH008,Oujda Border Warehouse,Oujda,2,1,0,0,0,3,14-01-2026
+27,PROD027,CCTV Camera 1080p,Security,8,WH008,Oujda Border Warehouse,Oujda,1,2,0,0,0,3,14-01-2026
+36,PROD036,Electric Motor 3HP,Machinery,3,WH003,Fès Logistics Hub,Fès,2,1,0,0,0,3,14-01-2026
+24,PROD024,Industrial Vacuum Cleaner,Cleaning Supplies,7,WH007,Meknes Distribution Point,Meknes,1,2,0,0,0,3,14-01-2026
+21,PROD021,Stainless Steel Sink,Kitchen Equipment,2,WH002,Rabat Distribution Center,Rabat,2,1,0,0,0,3,14-01-2026
+24,PROD024,Industrial Vacuum Cleaner,Cleaning Supplies,8,WH008,Oujda Border Warehouse,Oujda,1,2,0,0,0,3,14-01-2026
+24,PROD024,Industrial Vacuum Cleaner,Cleaning Supplies,10,WH010,El Jadida Storage Facility,El Jadida,1,2,0,0,0,3,14-01-2026
+36,PROD036,Electric Motor 3HP,Machinery,10,WH010,El Jadida Storage Facility,El Jadida,1,1,0,0,0,2,14-01-2026
+36,PROD036,Electric Motor 3HP,Machinery,2,WH002,Rabat Distribution Center,Rabat,1,1,0,0,0,2,14-01-2026
+20,PROD020,Refrigerator 500L,Kitchen Equipment,9,WH009,Safi Industrial Park,Safi,1,1,0,0,0,2,14-01-2026
+21,PROD021,Stainless Steel Sink,Kitchen Equipment,8,WH008,Oujda Border Warehouse,Oujda,1,1,0,0,0,2,14-01-2026
+35,PROD035,Pump Centrifugal 1HP,Machinery,2,WH002,Rabat Distribution Center,Rabat,1,1,0,0,0,2,14-01-2026
+13,PROD013,Forklift Pallet Jack,Warehouse Equipment,6,WH006,Tangier Free Zone,Tangier,1,1,0,0,0,2,14-01-2026
+13,PROD013,Forklift Pallet Jack,Warehouse Equipment,5,WH005,Agadir Port Terminal,Agadir,1,1,0,0,0,2,14-01-2026
+35,PROD035,Pump Centrifugal 1HP,Machinery,1,WH001,Casablanca Main Hub,Casablanca,1,1,0,0,0,2,14-01-2026

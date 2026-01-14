@@ -1,0 +1,11 @@
+{
+  "task_name": "load_orders_to_hdfs",
+  "timestamp": "20260114_052801",
+  "execution_date": "14-01-2026",
+  "error_type": "AirflowWebHDFSHookException",
+  "error_message": "Failed to locate the valid server.",
+  "traceback": "Traceback (most recent call last):\n  File \"/opt/airflow/dags/pipeline.py\", line 168, in load_orders_to_hdfs\n    hdfs_hook.load_file(source=orders_file, destination=hdfs_orders_path, overwrite=True)\n  File \"/home/airflow/.local/lib/python3.11/site-packages/airflow/providers/apache/hdfs/hooks/webhdfs.py\", line 157, in load_file\n    conn = self.get_conn()\n           ^^^^^^^^^^^^^^^\n  File \"/home/airflow/.local/lib/python3.11/site-packages/airflow/providers/apache/hdfs/hooks/webhdfs.py\", line 74, in get_conn\n    raise AirflowWebHDFSHookException(\"Failed to locate the valid server.\")\nairflow.providers.apache.hdfs.hooks.webhdfs.AirflowWebHDFSHookException: Failed to locate the valid server.\n",
+  "additional_info": {
+    "stage": "hdfs_orders_upload"
+  }
+}

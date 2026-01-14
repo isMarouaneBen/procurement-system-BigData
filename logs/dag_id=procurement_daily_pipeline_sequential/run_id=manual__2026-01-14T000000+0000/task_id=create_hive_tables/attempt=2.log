@@ -1,0 +1,50 @@
+[2026-01-14T05:49:27.871+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: procurement_daily_pipeline_sequential.create_hive_tables manual__2026-01-14T00:00:00+00:00 [queued]>
+[2026-01-14T05:49:27.877+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: procurement_daily_pipeline_sequential.create_hive_tables manual__2026-01-14T00:00:00+00:00 [queued]>
+[2026-01-14T05:49:27.878+0000] {taskinstance.py:2170} INFO - Starting attempt 2 of 3
+[2026-01-14T05:49:27.887+0000] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): create_hive_tables> on 2026-01-14 00:00:00+00:00
+[2026-01-14T05:49:27.890+0000] {standard_task_runner.py:60} INFO - Started process 208 to run task
+[2026-01-14T05:49:27.892+0000] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', 'procurement_daily_pipeline_sequential', 'create_hive_tables', 'manual__2026-01-14T00:00:00+00:00', '--job-id', '52', '--raw', '--subdir', 'DAGS_FOLDER/pipeline.py', '--cfg-path', '/tmp/tmpedofd8tl']
+[2026-01-14T05:49:27.894+0000] {standard_task_runner.py:88} INFO - Job 52: Subtask create_hive_tables
+[2026-01-14T05:49:27.947+0000] {task_command.py:423} INFO - Running <TaskInstance: procurement_daily_pipeline_sequential.create_hive_tables manual__2026-01-14T00:00:00+00:00 [running]> on host 400ff770cba1
+[2026-01-14T05:49:28.023+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='procurement_team' AIRFLOW_CTX_DAG_ID='procurement_daily_pipeline_sequential' AIRFLOW_CTX_TASK_ID='create_hive_tables' AIRFLOW_CTX_EXECUTION_DATE='2026-01-14T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-01-14T00:00:00+00:00'
+[2026-01-14T05:49:28.024+0000] {pipeline.py:295} INFO - Creating Hive tables...
+[2026-01-14T05:49:28.028+0000] {logging_mixin.py:188} WARNING - /home/airflow/.local/lib/python3.11/site-packages/airflow/utils/context.py:315 AirflowContextDeprecationWarning: Accessing 'execution_date' from the template is deprecated and will be removed in a future version. Please use 'data_interval_start' or 'logical_date' instead.
+[2026-01-14T05:49:28.625+0000] {pipeline.py:135} ERROR - Exception logged to /opt/airflow/data/logs/exceptions/14-01-2026/create_hive_tables_20260114_054928.json
+[2026-01-14T05:49:28.640+0000] {taskinstance.py:2698} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/opt/airflow/dags/pipeline.py", line 319, in create_hive_tables
+    cursor.execute(f"""
+  File "/home/airflow/.local/lib/python3.11/site-packages/trino/dbapi.py", line 640, in execute
+    self._iterator = iter(self._query.execute())
+                          ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/trino/client.py", line 909, in execute
+    self._result.rows += self.fetch()
+                         ^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/trino/client.py", line 929, in fetch
+    status = self._request.process(response)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/trino/client.py", line 698, in process
+    raise self._process_error(response["error"], response.get("id"))
+trino.exceptions.TrinoUserError: TrinoUserError(type=USER_ERROR, name=NOT_SUPPORTED, message="Hive CSV storage format only supports VARCHAR (unbounded). Unsupported columns: supplier_id bigint, sku_id bigint, quantity bigint, warehouse_id bigint", query_id=20260114_054928_00003_qahyp)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 433, in _execute_task
+    result = execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/operators/python.py", line 199, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/operators/python.py", line 216, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/pipeline.py", line 373, in create_hive_tables
+    log_exception(e, "create_hive_tables", date_str, {"stage": "hive_table_creation"})
+  File "/opt/airflow/dags/pipeline.py", line 139, in log_exception
+    raise AirflowException(f"{task_name} failed: {str(exception)}")
+airflow.exceptions.AirflowException: create_hive_tables failed: TrinoUserError(type=USER_ERROR, name=NOT_SUPPORTED, message="Hive CSV storage format only supports VARCHAR (unbounded). Unsupported columns: supplier_id bigint, sku_id bigint, quantity bigint, warehouse_id bigint", query_id=20260114_054928_00003_qahyp)
+[2026-01-14T05:49:28.645+0000] {taskinstance.py:1138} INFO - Marking task as UP_FOR_RETRY. dag_id=procurement_daily_pipeline_sequential, task_id=create_hive_tables, execution_date=20260114T000000, start_date=20260114T054927, end_date=20260114T054928
+[2026-01-14T05:49:28.658+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 52 for task create_hive_tables (create_hive_tables failed: TrinoUserError(type=USER_ERROR, name=NOT_SUPPORTED, message="Hive CSV storage format only supports VARCHAR (unbounded). Unsupported columns: supplier_id bigint, sku_id bigint, quantity bigint, warehouse_id bigint", query_id=20260114_054928_00003_qahyp); 208)
+[2026-01-14T05:49:28.667+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2026-01-14T05:49:28.686+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check

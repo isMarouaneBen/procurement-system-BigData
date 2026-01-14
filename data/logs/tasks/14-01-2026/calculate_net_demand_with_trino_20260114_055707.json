@@ -1,0 +1,11 @@
+{
+  "task_name": "calculate_net_demand_with_trino",
+  "timestamp": "20260114_055707",
+  "execution_date": "14-01-2026",
+  "status": "success",
+  "details": {
+    "total_combinations": 348,
+    "items_with_demand": 348,
+    "total_net_demand": 43974
+  }
+}

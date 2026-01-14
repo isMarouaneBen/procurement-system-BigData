@@ -1,0 +1,11 @@
+{
+  "task_name": "create_hive_tables",
+  "timestamp": "20260114_055430",
+  "execution_date": "14-01-2026",
+  "error_type": "TrinoUserError",
+  "error_message": "TrinoUserError(type=USER_ERROR, name=NOT_SUPPORTED, message=\"Hive CSV storage format only supports VARCHAR (unbounded). Unsupported columns: supplier_id bigint, sku_id bigint, quantity bigint, warehouse_id bigint\", query_id=20260114_055430_00007_qahyp)",
+  "traceback": "Traceback (most recent call last):\n  File \"/opt/airflow/dags/pipeline.py\", line 319, in create_hive_tables\n    cursor.execute(f\"\"\"\n  File \"/home/airflow/.local/lib/python3.11/site-packages/trino/dbapi.py\", line 640, in execute\n    self._iterator = iter(self._query.execute())\n                          ^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/airflow/.local/lib/python3.11/site-packages/trino/client.py\", line 909, in execute\n    self._result.rows += self.fetch()\n                         ^^^^^^^^^^^^\n  File \"/home/airflow/.local/lib/python3.11/site-packages/trino/client.py\", line 929, in fetch\n    status = self._request.process(response)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/airflow/.local/lib/python3.11/site-packages/trino/client.py\", line 698, in process\n    raise self._process_error(response[\"error\"], response.get(\"id\"))\ntrino.exceptions.TrinoUserError: TrinoUserError(type=USER_ERROR, name=NOT_SUPPORTED, message=\"Hive CSV storage format only supports VARCHAR (unbounded). Unsupported columns: supplier_id bigint, sku_id bigint, quantity bigint, warehouse_id bigint\", query_id=20260114_055430_00007_qahyp)\n",
+  "additional_info": {
+    "stage": "hive_table_creation"
+  }
+}

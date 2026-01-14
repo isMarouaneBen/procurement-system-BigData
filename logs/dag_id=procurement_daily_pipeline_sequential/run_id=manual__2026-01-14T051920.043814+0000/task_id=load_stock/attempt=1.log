@@ -1,0 +1,39 @@
+[2026-01-14T05:21:12.307+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: procurement_daily_pipeline_sequential.load_stock manual__2026-01-14T05:19:20.043814+00:00 [queued]>
+[2026-01-14T05:21:12.313+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: procurement_daily_pipeline_sequential.load_stock manual__2026-01-14T05:19:20.043814+00:00 [queued]>
+[2026-01-14T05:21:12.313+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 3
+[2026-01-14T05:21:12.320+0000] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): load_stock> on 2026-01-14 05:19:20.043814+00:00
+[2026-01-14T05:21:12.325+0000] {standard_task_runner.py:60} INFO - Started process 234 to run task
+[2026-01-14T05:21:12.328+0000] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', 'procurement_daily_pipeline_sequential', 'load_stock', 'manual__2026-01-14T05:19:20.043814+00:00', '--job-id', '30', '--raw', '--subdir', 'DAGS_FOLDER/pipeline.py', '--cfg-path', '/tmp/tmp2ylgqh04']
+[2026-01-14T05:21:12.330+0000] {standard_task_runner.py:88} INFO - Job 30: Subtask load_stock
+[2026-01-14T05:21:12.368+0000] {task_command.py:423} INFO - Running <TaskInstance: procurement_daily_pipeline_sequential.load_stock manual__2026-01-14T05:19:20.043814+00:00 [running]> on host b8ec20818387
+[2026-01-14T05:21:12.441+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='procurement_team' AIRFLOW_CTX_DAG_ID='procurement_daily_pipeline_sequential' AIRFLOW_CTX_TASK_ID='load_stock' AIRFLOW_CTX_EXECUTION_DATE='2026-01-14T05:19:20.043814+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-01-14T05:19:20.043814+00:00'
+[2026-01-14T05:21:12.442+0000] {pipeline.py:191} INFO - Loading stock to HDFS...
+[2026-01-14T05:21:12.445+0000] {logging_mixin.py:188} WARNING - /home/airflow/.local/lib/python3.11/site-packages/airflow/utils/context.py:315 AirflowContextDeprecationWarning: Accessing 'execution_date' from the template is deprecated and will be removed in a future version. Please use 'data_interval_start' or 'logical_date' instead.
+[2026-01-14T05:21:12.446+0000] {pipeline.py:137} WARNING - Failed to write exception log: [Errno 13] Permission denied: '/opt/airflow/data/logs'
+[2026-01-14T05:21:12.452+0000] {taskinstance.py:2698} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/opt/airflow/dags/pipeline.py", line 205, in load_stock_to_hdfs
+    raise FileNotFoundError(f"Stock file not found at {stock_file}")
+FileNotFoundError: Stock file not found at /opt/airflow/data/raw/stock/14-01-2026/stock.json
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 433, in _execute_task
+    result = execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/operators/python.py", line 199, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/operators/python.py", line 216, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/pipeline.py", line 231, in load_stock_to_hdfs
+    log_exception(e, "load_stock_to_hdfs", date_str, {"stage": "hdfs_stock_upload"})
+  File "/opt/airflow/dags/pipeline.py", line 139, in log_exception
+    raise AirflowException(f"{task_name} failed: {str(exception)}")
+airflow.exceptions.AirflowException: load_stock_to_hdfs failed: Stock file not found at /opt/airflow/data/raw/stock/14-01-2026/stock.json
+[2026-01-14T05:21:12.459+0000] {taskinstance.py:1138} INFO - Marking task as UP_FOR_RETRY. dag_id=procurement_daily_pipeline_sequential, task_id=load_stock, execution_date=20260114T051920, start_date=20260114T052112, end_date=20260114T052112
+[2026-01-14T05:21:12.466+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 30 for task load_stock (load_stock_to_hdfs failed: Stock file not found at /opt/airflow/data/raw/stock/14-01-2026/stock.json; 234)
+[2026-01-14T05:21:12.501+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2026-01-14T05:21:12.521+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,11 @@
+{
+  "task_name": "create_hive_tables",
+  "timestamp": "20260114_054227",
+  "execution_date": "14-01-2026",
+  "error_type": "TrinoExternalError",
+  "error_message": "TrinoExternalError(type=EXTERNAL, name=HIVE_METASTORE_ERROR, message=\"Failed connecting to Hive metastore: [hive-metastore:9083]\", query_id=20260114_054213_00000_3u7h9)",
+  "traceback": "Traceback (most recent call last):\n  File \"/opt/airflow/dags/pipeline.py\", line 311, in create_hive_tables\n    cursor.execute(f\"CREATE SCHEMA IF NOT EXISTS {TRINO_CATALOG_HIVE}.{TRINO_SCHEMA_HIVE}\")\n  File \"/home/airflow/.local/lib/python3.11/site-packages/trino/dbapi.py\", line 640, in execute\n    self._iterator = iter(self._query.execute())\n                          ^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/airflow/.local/lib/python3.11/site-packages/trino/client.py\", line 909, in execute\n    self._result.rows += self.fetch()\n                         ^^^^^^^^^^^^\n  File \"/home/airflow/.local/lib/python3.11/site-packages/trino/client.py\", line 929, in fetch\n    status = self._request.process(response)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/airflow/.local/lib/python3.11/site-packages/trino/client.py\", line 698, in process\n    raise self._process_error(response[\"error\"], response.get(\"id\"))\n          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/airflow/.local/lib/python3.11/site-packages/trino/client.py\", line 667, in _process_error\n    raise exceptions.TrinoExternalError(error, query_id)\ntrino.exceptions.TrinoExternalError: TrinoExternalError(type=EXTERNAL, name=HIVE_METASTORE_ERROR, message=\"Failed connecting to Hive metastore: [hive-metastore:9083]\", query_id=20260114_054213_00000_3u7h9)\n",
+  "additional_info": {
+    "stage": "hive_table_creation"
+  }
+}

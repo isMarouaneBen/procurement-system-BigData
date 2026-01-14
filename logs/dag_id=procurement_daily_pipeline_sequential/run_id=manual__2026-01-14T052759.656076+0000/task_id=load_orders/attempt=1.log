@@ -1,0 +1,50 @@
+[2026-01-14T05:28:01.187+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: procurement_daily_pipeline_sequential.load_orders manual__2026-01-14T05:27:59.656076+00:00 [queued]>
+[2026-01-14T05:28:01.193+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: procurement_daily_pipeline_sequential.load_orders manual__2026-01-14T05:27:59.656076+00:00 [queued]>
+[2026-01-14T05:28:01.193+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 3
+[2026-01-14T05:28:01.202+0000] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): load_orders> on 2026-01-14 05:27:59.656076+00:00
+[2026-01-14T05:28:01.206+0000] {standard_task_runner.py:60} INFO - Started process 179 to run task
+[2026-01-14T05:28:01.209+0000] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', 'procurement_daily_pipeline_sequential', 'load_orders', 'manual__2026-01-14T05:27:59.656076+00:00', '--job-id', '35', '--raw', '--subdir', 'DAGS_FOLDER/pipeline.py', '--cfg-path', '/tmp/tmpaaykq3ye']
+[2026-01-14T05:28:01.211+0000] {standard_task_runner.py:88} INFO - Job 35: Subtask load_orders
+[2026-01-14T05:28:01.264+0000] {task_command.py:423} INFO - Running <TaskInstance: procurement_daily_pipeline_sequential.load_orders manual__2026-01-14T05:27:59.656076+00:00 [running]> on host 17961030c6f6
+[2026-01-14T05:28:01.331+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='procurement_team' AIRFLOW_CTX_DAG_ID='procurement_daily_pipeline_sequential' AIRFLOW_CTX_TASK_ID='load_orders' AIRFLOW_CTX_EXECUTION_DATE='2026-01-14T05:27:59.656076+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-01-14T05:27:59.656076+00:00'
+[2026-01-14T05:28:01.332+0000] {pipeline.py:148} INFO - Loading orders to HDFS...
+[2026-01-14T05:28:01.335+0000] {logging_mixin.py:188} WARNING - /home/airflow/.local/lib/python3.11/site-packages/airflow/utils/context.py:315 AirflowContextDeprecationWarning: Accessing 'execution_date' from the template is deprecated and will be removed in a future version. Please use 'data_interval_start' or 'logical_date' instead.
+[2026-01-14T05:28:01.344+0000] {base.py:83} INFO - Using connection ID 'hdfs_default' for task execution.
+[2026-01-14T05:28:01.346+0000] {webhdfs.py:82} INFO - Trying to connect to namenode:9000
+[2026-01-14T05:28:01.347+0000] {webhdfs.py:86} INFO - Trying namenode namenode
+[2026-01-14T05:28:01.348+0000] {client.py:192} INFO - Instantiated <InsecureClient(url='http://namenode:9000')>.
+[2026-01-14T05:28:01.349+0000] {client.py:320} INFO - Fetching status for '/'.
+[2026-01-14T05:28:01.354+0000] {webhdfs.py:102} INFO - Read operation on namenode namenode failed with error: b'It looks like you are making an HTTP request to a Hadoop IPC port. This is not the correct port for the web interface on this daemon.\r\n'
+[2026-01-14T05:28:01.364+0000] {pipeline.py:135} ERROR - Exception logged to /opt/airflow/data/logs/exceptions/14-01-2026/load_orders_to_hdfs_20260114_052801.json
+[2026-01-14T05:28:01.370+0000] {taskinstance.py:2698} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/opt/airflow/dags/pipeline.py", line 168, in load_orders_to_hdfs
+    hdfs_hook.load_file(source=orders_file, destination=hdfs_orders_path, overwrite=True)
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/providers/apache/hdfs/hooks/webhdfs.py", line 157, in load_file
+    conn = self.get_conn()
+           ^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/providers/apache/hdfs/hooks/webhdfs.py", line 74, in get_conn
+    raise AirflowWebHDFSHookException("Failed to locate the valid server.")
+airflow.providers.apache.hdfs.hooks.webhdfs.AirflowWebHDFSHookException: Failed to locate the valid server.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 433, in _execute_task
+    result = execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/operators/python.py", line 199, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/operators/python.py", line 216, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/pipeline.py", line 182, in load_orders_to_hdfs
+    log_exception(e, "load_orders_to_hdfs", date_str, {"stage": "hdfs_orders_upload"})
+  File "/opt/airflow/dags/pipeline.py", line 139, in log_exception
+    raise AirflowException(f"{task_name} failed: {str(exception)}")
+airflow.exceptions.AirflowException: load_orders_to_hdfs failed: Failed to locate the valid server.
+[2026-01-14T05:28:01.374+0000] {taskinstance.py:1138} INFO - Marking task as UP_FOR_RETRY. dag_id=procurement_daily_pipeline_sequential, task_id=load_orders, execution_date=20260114T052759, start_date=20260114T052801, end_date=20260114T052801
+[2026-01-14T05:28:01.382+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 35 for task load_orders (load_orders_to_hdfs failed: Failed to locate the valid server.; 179)
+[2026-01-14T05:28:01.421+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2026-01-14T05:28:01.438+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check

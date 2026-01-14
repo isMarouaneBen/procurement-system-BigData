@@ -1,0 +1,9 @@
+{
+  "task_name": "store_snapshots_to_cassandra",
+  "timestamp": "20260114_055439",
+  "execution_date": "14-01-2026",
+  "status": "success",
+  "details": {
+    "inserted_count": 266
+  }
+}

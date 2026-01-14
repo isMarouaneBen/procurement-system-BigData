@@ -1,0 +1,10 @@
+{
+  "task_name": "load_stock_to_hdfs",
+  "timestamp": "20260114_055701",
+  "execution_date": "14-01-2026",
+  "status": "success",
+  "details": {
+    "hdfs_path": "/procurement/raw/stock/14-01-2026/stock.csv",
+    "record_count": 172
+  }
+}

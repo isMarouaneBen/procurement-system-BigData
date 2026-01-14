@@ -1,0 +1,53 @@
+[2026-01-14T05:23:57.070+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: procurement_daily_pipeline_sequential.load_orders manual__2026-01-14T05:23:55.464185+00:00 [queued]>
+[2026-01-14T05:23:57.076+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: procurement_daily_pipeline_sequential.load_orders manual__2026-01-14T05:23:55.464185+00:00 [queued]>
+[2026-01-14T05:23:57.077+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 3
+[2026-01-14T05:23:57.087+0000] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): load_orders> on 2026-01-14 05:23:55.464185+00:00
+[2026-01-14T05:23:57.103+0000] {standard_task_runner.py:60} INFO - Started process 179 to run task
+[2026-01-14T05:23:57.111+0000] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', 'procurement_daily_pipeline_sequential', 'load_orders', 'manual__2026-01-14T05:23:55.464185+00:00', '--job-id', '33', '--raw', '--subdir', 'DAGS_FOLDER/pipeline.py', '--cfg-path', '/tmp/tmpr9s1lk55']
+[2026-01-14T05:23:57.114+0000] {standard_task_runner.py:88} INFO - Job 33: Subtask load_orders
+[2026-01-14T05:23:57.185+0000] {task_command.py:423} INFO - Running <TaskInstance: procurement_daily_pipeline_sequential.load_orders manual__2026-01-14T05:23:55.464185+00:00 [running]> on host 03105439e4da
+[2026-01-14T05:23:57.267+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='procurement_team' AIRFLOW_CTX_DAG_ID='procurement_daily_pipeline_sequential' AIRFLOW_CTX_TASK_ID='load_orders' AIRFLOW_CTX_EXECUTION_DATE='2026-01-14T05:23:55.464185+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-01-14T05:23:55.464185+00:00'
+[2026-01-14T05:23:57.269+0000] {pipeline.py:148} INFO - Loading orders to HDFS...
+[2026-01-14T05:23:57.274+0000] {logging_mixin.py:188} WARNING - /home/airflow/.local/lib/python3.11/site-packages/airflow/utils/context.py:315 AirflowContextDeprecationWarning: Accessing 'execution_date' from the template is deprecated and will be removed in a future version. Please use 'data_interval_start' or 'logical_date' instead.
+[2026-01-14T05:23:57.299+0000] {pipeline.py:135} ERROR - Exception logged to /opt/airflow/data/logs/exceptions/14-01-2026/load_orders_to_hdfs_20260114_052357.json
+[2026-01-14T05:23:57.314+0000] {taskinstance.py:2698} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/opt/airflow/dags/pipeline.py", line 168, in load_orders_to_hdfs
+    hdfs_hook.load_file(source=orders_file, destination=hdfs_orders_path, overwrite=True)
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/providers/apache/hdfs/hooks/webhdfs.py", line 157, in load_file
+    conn = self.get_conn()
+           ^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/providers/apache/hdfs/hooks/webhdfs.py", line 72, in get_conn
+    connection = self._find_valid_server()
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/providers/apache/hdfs/hooks/webhdfs.py", line 78, in _find_valid_server
+    connection = self.get_connection(self.webhdfs_conn_id)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/hooks/base.py", line 82, in get_connection
+    conn = Connection.get_connection_from_secrets(conn_id)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/connection.py", line 479, in get_connection_from_secrets
+    raise AirflowNotFoundException(f"The conn_id `{conn_id}` isn't defined")
+airflow.exceptions.AirflowNotFoundException: The conn_id `hdfs_default` isn't defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 433, in _execute_task
+    result = execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/operators/python.py", line 199, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/operators/python.py", line 216, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/pipeline.py", line 182, in load_orders_to_hdfs
+    log_exception(e, "load_orders_to_hdfs", date_str, {"stage": "hdfs_orders_upload"})
+  File "/opt/airflow/dags/pipeline.py", line 139, in log_exception
+    raise AirflowException(f"{task_name} failed: {str(exception)}")
+airflow.exceptions.AirflowException: load_orders_to_hdfs failed: The conn_id `hdfs_default` isn't defined
+[2026-01-14T05:23:57.319+0000] {taskinstance.py:1138} INFO - Marking task as UP_FOR_RETRY. dag_id=procurement_daily_pipeline_sequential, task_id=load_orders, execution_date=20260114T052355, start_date=20260114T052357, end_date=20260114T052357
+[2026-01-14T05:23:57.329+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 33 for task load_orders (load_orders_to_hdfs failed: The conn_id `hdfs_default` isn't defined; 179)
+[2026-01-14T05:23:57.364+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2026-01-14T05:23:57.383+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check

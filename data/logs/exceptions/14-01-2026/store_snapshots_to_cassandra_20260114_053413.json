@@ -1,0 +1,11 @@
+{
+  "task_name": "store_snapshots_to_cassandra",
+  "timestamp": "20260114_053413",
+  "execution_date": "14-01-2026",
+  "error_type": "InvalidRequest",
+  "error_message": "Error from server: code=2200 [Invalid query] message=\"keyspace procurement does not exist\"",
+  "traceback": "Traceback (most recent call last):\n  File \"/opt/airflow/dags/pipeline.py\", line 267, in store_snapshots_to_cassandra\n    prepared_stmt = session.prepare(insert_query)\n                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/airflow/.local/lib/python3.11/site-packages/cassandra/cluster.py\", line 3220, in prepare\n    response = future.result().one()\n               ^^^^^^^^^^^^^^^\n  File \"/home/airflow/.local/lib/python3.11/site-packages/cassandra/cluster.py\", line 5048, in result\n    raise self._final_exception\ncassandra.InvalidRequest: Error from server: code=2200 [Invalid query] message=\"keyspace procurement does not exist\"\n",
+  "additional_info": {
+    "stage": "cassandra_insert"
+  }
+}

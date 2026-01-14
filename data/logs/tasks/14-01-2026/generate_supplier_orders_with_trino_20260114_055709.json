@@ -1,0 +1,10 @@
+{
+  "task_name": "generate_supplier_orders_with_trino",
+  "timestamp": "20260114_055709",
+  "execution_date": "14-01-2026",
+  "status": "success",
+  "details": {
+    "orders_generated": 348,
+    "total_cost": 2631239.6999999997
+  }
+}

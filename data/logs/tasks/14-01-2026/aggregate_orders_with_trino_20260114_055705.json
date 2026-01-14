@@ -1,0 +1,9 @@
+{
+  "task_name": "aggregate_orders_with_trino",
+  "timestamp": "20260114_055705",
+  "execution_date": "14-01-2026",
+  "status": "success",
+  "details": {
+    "aggregated_count": 348
+  }
+}

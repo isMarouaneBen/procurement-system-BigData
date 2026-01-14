@@ -1,0 +1,53 @@
+[2026-01-14T05:42:13.802+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: procurement_daily_pipeline_sequential.create_hive_tables manual__2026-01-14T05:36:51.823011+00:00 [queued]>
+[2026-01-14T05:42:13.807+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: procurement_daily_pipeline_sequential.create_hive_tables manual__2026-01-14T05:36:51.823011+00:00 [queued]>
+[2026-01-14T05:42:13.808+0000] {taskinstance.py:2170} INFO - Starting attempt 2 of 3
+[2026-01-14T05:42:13.815+0000] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): create_hive_tables> on 2026-01-14 05:36:51.823011+00:00
+[2026-01-14T05:42:13.819+0000] {standard_task_runner.py:60} INFO - Started process 198 to run task
+[2026-01-14T05:42:13.821+0000] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', 'procurement_daily_pipeline_sequential', 'create_hive_tables', 'manual__2026-01-14T05:36:51.823011+00:00', '--job-id', '46', '--raw', '--subdir', 'DAGS_FOLDER/pipeline.py', '--cfg-path', '/tmp/tmpdgxbpn0g']
+[2026-01-14T05:42:13.823+0000] {standard_task_runner.py:88} INFO - Job 46: Subtask create_hive_tables
+[2026-01-14T05:42:13.859+0000] {task_command.py:423} INFO - Running <TaskInstance: procurement_daily_pipeline_sequential.create_hive_tables manual__2026-01-14T05:36:51.823011+00:00 [running]> on host db99c37ee18c
+[2026-01-14T05:42:13.918+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='procurement_team' AIRFLOW_CTX_DAG_ID='procurement_daily_pipeline_sequential' AIRFLOW_CTX_TASK_ID='create_hive_tables' AIRFLOW_CTX_EXECUTION_DATE='2026-01-14T05:36:51.823011+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-01-14T05:36:51.823011+00:00'
+[2026-01-14T05:42:13.919+0000] {pipeline.py:295} INFO - Creating Hive tables...
+[2026-01-14T05:42:13.922+0000] {logging_mixin.py:188} WARNING - /home/airflow/.local/lib/python3.11/site-packages/airflow/utils/context.py:315 AirflowContextDeprecationWarning: Accessing 'execution_date' from the template is deprecated and will be removed in a future version. Please use 'data_interval_start' or 'logical_date' instead.
+[2026-01-14T05:42:27.072+0000] {pipeline.py:135} ERROR - Exception logged to /opt/airflow/data/logs/exceptions/14-01-2026/create_hive_tables_20260114_054227.json
+[2026-01-14T05:42:27.079+0000] {taskinstance.py:2698} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/opt/airflow/dags/pipeline.py", line 311, in create_hive_tables
+    cursor.execute(f"CREATE SCHEMA IF NOT EXISTS {TRINO_CATALOG_HIVE}.{TRINO_SCHEMA_HIVE}")
+  File "/home/airflow/.local/lib/python3.11/site-packages/trino/dbapi.py", line 640, in execute
+    self._iterator = iter(self._query.execute())
+                          ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/trino/client.py", line 909, in execute
+    self._result.rows += self.fetch()
+                         ^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/trino/client.py", line 929, in fetch
+    status = self._request.process(response)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/trino/client.py", line 698, in process
+    raise self._process_error(response["error"], response.get("id"))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/trino/client.py", line 667, in _process_error
+    raise exceptions.TrinoExternalError(error, query_id)
+trino.exceptions.TrinoExternalError: TrinoExternalError(type=EXTERNAL, name=HIVE_METASTORE_ERROR, message="Failed connecting to Hive metastore: [hive-metastore:9083]", query_id=20260114_054213_00000_3u7h9)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 433, in _execute_task
+    result = execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/operators/python.py", line 199, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/operators/python.py", line 216, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/pipeline.py", line 373, in create_hive_tables
+    log_exception(e, "create_hive_tables", date_str, {"stage": "hive_table_creation"})
+  File "/opt/airflow/dags/pipeline.py", line 139, in log_exception
+    raise AirflowException(f"{task_name} failed: {str(exception)}")
+airflow.exceptions.AirflowException: create_hive_tables failed: TrinoExternalError(type=EXTERNAL, name=HIVE_METASTORE_ERROR, message="Failed connecting to Hive metastore: [hive-metastore:9083]", query_id=20260114_054213_00000_3u7h9)
+[2026-01-14T05:42:27.084+0000] {taskinstance.py:1138} INFO - Marking task as UP_FOR_RETRY. dag_id=procurement_daily_pipeline_sequential, task_id=create_hive_tables, execution_date=20260114T053651, start_date=20260114T054213, end_date=20260114T054227
+[2026-01-14T05:42:27.094+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 46 for task create_hive_tables (create_hive_tables failed: TrinoExternalError(type=EXTERNAL, name=HIVE_METASTORE_ERROR, message="Failed connecting to Hive metastore: [hive-metastore:9083]", query_id=20260114_054213_00000_3u7h9); 198)
+[2026-01-14T05:42:27.102+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2026-01-14T05:42:27.116+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check

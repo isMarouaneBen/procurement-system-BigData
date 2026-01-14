@@ -1,0 +1,10 @@
+{
+  "task_name": "load_orders_to_hdfs",
+  "timestamp": "20260114_055700",
+  "execution_date": "14-01-2026",
+  "status": "success",
+  "details": {
+    "hdfs_path": "/procurement/raw/orders/14-01-2026/orders.csv",
+    "file_size": 41048
+  }
+}
