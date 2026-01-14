@@ -3885,3 +3885,17 @@ SyntaxError: invalid syntax
 [2026-01-14T06:50:00.075+0000] {logging_mixin.py:188} INFO - [2026-01-14T06:50:00.075+0000] {dag.py:3036} INFO - Sync 1 DAGs
 [2026-01-14T06:50:00.089+0000] {logging_mixin.py:188} INFO - [2026-01-14T06:50:00.088+0000] {dag.py:3823} INFO - Setting next_dagrun for procurement_daily_pipeline_sequential to 2026-01-13 23:00:00+00:00, run_after=2026-01-14 23:00:00+00:00
 [2026-01-14T06:50:00.103+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/pipeline.py took 0.087 seconds
+[2026-01-14T06:50:30.157+0000] {processor.py:161} INFO - Started process (PID=1031) to work on /opt/airflow/dags/pipeline.py
+[2026-01-14T06:50:30.158+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/pipeline.py for tasks to queue
+[2026-01-14T06:50:30.158+0000] {logging_mixin.py:188} INFO - [2026-01-14T06:50:30.158+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline.py
+[2026-01-14T06:50:30.185+0000] {processor.py:840} INFO - DAG(s) 'procurement_daily_pipeline_sequential' retrieved from /opt/airflow/dags/pipeline.py
+[2026-01-14T06:50:30.203+0000] {logging_mixin.py:188} INFO - [2026-01-14T06:50:30.203+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-01-14T06:50:30.217+0000] {logging_mixin.py:188} INFO - [2026-01-14T06:50:30.217+0000] {dag.py:3823} INFO - Setting next_dagrun for procurement_daily_pipeline_sequential to 2026-01-13 23:00:00+00:00, run_after=2026-01-14 23:00:00+00:00
+[2026-01-14T06:50:30.230+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/pipeline.py took 0.076 seconds
+[2026-01-14T06:51:00.365+0000] {processor.py:161} INFO - Started process (PID=1036) to work on /opt/airflow/dags/pipeline.py
+[2026-01-14T06:51:00.366+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/pipeline.py for tasks to queue
+[2026-01-14T06:51:00.367+0000] {logging_mixin.py:188} INFO - [2026-01-14T06:51:00.367+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline.py
+[2026-01-14T06:51:00.398+0000] {processor.py:840} INFO - DAG(s) 'procurement_daily_pipeline_sequential' retrieved from /opt/airflow/dags/pipeline.py
+[2026-01-14T06:51:00.415+0000] {logging_mixin.py:188} INFO - [2026-01-14T06:51:00.415+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-01-14T06:51:00.429+0000] {logging_mixin.py:188} INFO - [2026-01-14T06:51:00.429+0000] {dag.py:3823} INFO - Setting next_dagrun for procurement_daily_pipeline_sequential to 2026-01-13 23:00:00+00:00, run_after=2026-01-14 23:00:00+00:00
+[2026-01-14T06:51:00.447+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/pipeline.py took 0.084 seconds
