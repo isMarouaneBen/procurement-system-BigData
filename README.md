@@ -140,7 +140,7 @@ procurement-system-BigData/
 
 - **Local Data**: `/opt/airflow/data/`
   - Raw: `data/raw/`
-  - Temp: `data/temp/`
+  - Processed: `data/processed/`
   - Logs: `data/logs/`
 
 ## 📈 Key Features
