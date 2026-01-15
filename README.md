@@ -6,12 +6,9 @@ A comprehensive Big Data procurement management system built with modern data en
 
 This system orchestrates a complex data pipeline using Apache Airflow to coordinate data ingestion, processing, and analytics across a distributed Big Data stack:
 
-```
-Raw Data Sources → HDFS → Hive Tables → Trino Federated Queries → Supplier Orders
-      ↓              ↓          ↓              ↓
- PostgreSQL     Cassandra   PostgreSQL     HDFS Output
- (Metadata)    (Snapshots)  (Master Data)  (Results)
-```
+<p align="center">
+  <img src="docs/images/architecture.jpeg" alt="System Architecture Diagram" width="900">
+</p>
 
 ### Core Components
 
